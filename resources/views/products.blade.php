@@ -12,7 +12,7 @@
 		<hr class="my_title" />
 		<div class="products">
 			<div class="productWrap">	
-				<div class="product">
+				{{-- <div class="product">
 		      <img src="img/pic6.jpg" class="p-img" draggable="false">
 		      <h1>Hooded Short Anorak</h1>
 		        <span class="price">$300</span>
@@ -26,7 +26,8 @@
 		            <span>more</span>
 		          </div>
 		        </div>
-			</div><div class="product">
+			</div> --}}
+			{{-- <div class="product">
 		      <img src="img/pic8.jpg" class="p-img" draggable="false">
 		      <h1>Hooded Short Anorak</h1>
 		        <span class="price">$300</span>
@@ -40,7 +41,8 @@
 		            <span>300</span>
 		          </div>
 		        </div>
-			</div><div class="product">
+			</div> --}}
+{{-- 			<div class="product">
 		      <img src="img/pic10.jpg" class="p-img" draggable="false">
 		      <h1>Hooded Short Anorak</h1>
 		        <span class="price">$300</span>
@@ -54,7 +56,8 @@
 		            <span>300</span>
 		          </div>
 		        </div>
-			</div><div class="product">
+			</div> --}}
+			{{-- <div class="product">
 		      <img src="img/pic6.jpg" class="p-img" draggable="false">
 		      <h1>Hooded Short Anorak</h1>
 		        <span class="price">$300</span>
@@ -70,9 +73,9 @@
 		        </div>
 			</div>
 			</div>		
-		</div>
+		</div> --}}
 
-		<div class="products">
+		{{-- <div class="products">
 			<div class="productWrap">	
 				<div class="product">
 		      <img src="img/pic6.jpg" class="p-img" draggable="false">
@@ -88,7 +91,8 @@
 		            <span>more</span>
 		          </div>
 		        </div>
-			</div><div class="product">
+			</div> --}}
+			{{-- <div class="product">
 		      <img src="img/pic6.jpg" class="p-img" draggable="false">
 		      <h1>Hooded Short Anorak</h1>
 		        <span class="price">$300</span>
@@ -102,7 +106,8 @@
 		            <span>300</span>
 		          </div>
 		        </div>
-			</div><div class="product">
+			</div> --}}
+			<div class="product">
 		      <img src="img/pic6.jpg" class="p-img" draggable="false">
 		      <h1>Hooded Short Anorak</h1>
 		        <span class="price">$300</span>

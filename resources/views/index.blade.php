@@ -53,127 +53,46 @@
 
 			<hr class="my_title1" />
 			<!-- <h1 class="heading">Clerance</h1> -->
-			<div class="productWrap">	
-				<div class="product">
-		      <img src="img/pic6.jpg" class="p-img" draggable="false" alt="">
-		      <h1>Hooded Short Anorak</h1>
-		        <span class="price">$300</span>
-		        <div class="buy">
-		          <div class="cart">
-		            <img src="http://atakan.work/ea/img/shcart.png" height="17" width="19" alt="">
-		            <span>Add to cart</span>
-		          </div>
-		          <div class="details">
-			
-		          </div>
-		        </div>
-			</div><div class="product">
-		      <img src="img/pic6.jpg" class="p-img" draggable="false" alt="">
-		      <h1>Hooded Short Anorak</h1>
-		        <span class="price">$300</span>
-		        <div class="buy">
-		          <div class="cart">
-		            <img src="http://atakan.work/ea/img/shcart.png" height="17" width="19" alt="">
-		            <span>Add to cart</span>
-		          </div>
-		          <div class="details">
-		            <img src="http://atakan.work/ea/img/eye.png" height="10" width="19" alt="">
-		            <span>300</span>
-		          </div>
-		        </div>
-			</div><div class="product">
-		      <img src="img/pic6.jpg" class="p-img" draggable="false" alt="">
-		      <h1>Hooded Short Anorak</h1>
-		        <span class="price">$300</span>
-		        <div class="buy">
-		          <div class="cart">
-		            <img src="http://atakan.work/ea/img/shcart.png" height="17" width="19" alt="">
-		            <span>Add to cart</span>
-		          </div>
-		          <div class="details">
-		            <img src="http://atakan.work/ea/img/eye.png" height="10" width="19" alt="">
-		            <span>300</span>
-		          </div>
-		        </div>
-			</div><div class="product">
-		      <img src="img/pic6.jpg" class="p-img" draggable="false" alt="">
-		      <h1>Hooded Short Anorak</h1>
-		        <span class="price">$300</span>
-		        <div class="buy">
-		          <div class="cart">
-		            <img src="http://atakan.work/ea/img/shcart.png" height="17" width="19" alt="">
-		            <span>Add to cart</span>
-		          </div>
-		          <div class="details">
-		            <img src="http://atakan.work/ea/img/eye.png" height="10" width="19" alt="">
-		            <span>300</span>
-		          </div>
-		        </div>
-			</div>
-			</div>		
+			<div class="productWrap">
+				@foreach(\App\Models\Product::all() as $products)	
+					<div class="product">
+				      <img src="img/pic6.jpg" class="p-img" draggable="false" alt="">
+				      <h1>{{$products->name}}</h1>
+				        <span class="price">{{$products->price}}</span>
+				        <div class="buy">
+				          <div class="cart">
+				            <img src="http://atakan.work/ea/img/shcart.png" height="17" width="19" alt="">
+				            <span>Add to cart</span>
+				          </div>
+				          <div class="details">
+					
+				          </div>
+				        </div>
+					</div>
+				@endforeach
+			</div>	
 		</section>
 
 		<section>
-		<hr class="my_title" />
-			<div class="productWrap">	
-				<div class="product">
-		      <img src="img/pic6.jpg" class="p-img" draggable="false" alt="">
-		      <h1>Hooded Short Anorak</h1>
-		        <span class="price">$300</span>
-		        <div class="buy">
-		          <div class="cart">
-		            <img src="http://atakan.work/ea/img/shcart.png" height="17" width="19" alt="">
-		            <span>Add to cart</span>
-		          </div>
-		          <div class="details">
-		            <img src="http://atakan.work/ea/img/eye.png" height="10" width="19" alt="">
-		            <span>300</span>
-		          </div>
-		        </div>
-			</div><div class="product">
-		      <img src="img/pic6.jpg" class="p-img" draggable="false" alt="">
-		      <h1>Hooded Short Anorak</h1>
-		        <span class="price">$300</span>
-		        <div class="buy">
-		          <div class="cart">
-		            <img src="http://atakan.work/ea/img/shcart.png" height="17" width="19" alt="">
-		            <span>Add to cart</span>
-		          </div>
-		          <div class="details">
-		            <img src="http://atakan.work/ea/img/eye.png" height="10" width="19" alt="">
-		            <span>300</span>
-		          </div>
-		        </div>
-			</div><div class="product">
-		      <img src="img/pic6.jpg" class="p-img" draggable="false" alt="">
-		      <h1>Hooded Short Anorak</h1>
-		        <span class="price">$300</span>
-		        <div class="buy">
-		          <div class="cart">
-		            <img src="http://atakan.work/ea/img/shcart.png" height="17" width="19" alt="">
-		            <span>Add to cart</span>
-		          </div>
-		          <div class="details">
-		            <img src="http://atakan.work/ea/img/eye.png" height="10" width="19" alt="">
-		            <span>300</span>
-		          </div>
-		        </div>
-			</div><div class="product">
-		      <img src="img/pic6.jpg" class="p-img" draggable="false" alt="">
-		      <h1>Hooded Short Anorak</h1>
-		        <span class="price">$300</span>
-		        <div class="buy">
-		          <div class="cart">
-		            <img src="http://atakan.work/ea/img/shcart.png" height="17" width="19" alt="">
-		            <span>Add to cart</span>
-		          </div>
-		          <div class="details">
-		            <img src="http://atakan.work/ea/img/eye.png" height="10" width="19" alt="">
-		            <span>300</span>
-		          </div>
-		        </div>
-			</div>
-			</div>		
+		<hr class="my_title" />	
+			<div class="productWrap">
+				@foreach(\App\Models\Product::all() as $products)	
+					<div class="product">
+				      <img src="img/pic6.jpg" class="p-img" draggable="false" alt="">
+				      <h1>{{$products->name}}</h1>
+				        <span class="price">{{$products->price}}</span>
+				        <div class="buy">
+				          <div class="cart">
+				            <img src="http://atakan.work/ea/img/shcart.png" height="17" width="19" alt="">
+				            <span>Add to cart</span>
+				          </div>
+				          <div class="details">
+					
+				          </div>
+				        </div>
+					</div>
+				@endforeach
+			</div>	
 		</section>
 
 		<section>

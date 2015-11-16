@@ -20,25 +20,56 @@ Route::get('index', function () {
     return view('index');
 });
 
-Route::get('about', function () {
-    return view('about');
-});
+// Route::get('about', function () {
+//     return view('about');
+// });
 
 
-Route::get('contactUs', function () {
-    return view('contactUs');
-});
+// Route::get('contactUs', function () {
+//     return view('contactUs');
+// });
 
 
-Route::get('productOverview', function () {
-    return view('productOverview');
-});
+// Route::get('productOverview', function () {
+//     return view('productOverview');
+// });
+
+// Route::get('products', function () {
+//     return view('products');
+// });
+
+// Route::get('makeOrder', function () {
+//     return view('makeOrder');
+// });
+
+
 
 Route::get('products', function () {
-    return view('products');
+	$products=\App\Models\Product::all();
+
+    return $products;
 });
 
-Route::get('makeOrder', function () {
-    return view('makeOrder');
+Route::get('categories', function(){
+	$categories=\App\Models\Category::all();
+
+	return $categories;
 });
 
+Route::get('posts', function(){
+	$posts=\App\Models\Post::all();
+
+	return $posts;
+});
+
+Route::get('orders', function(){
+	$orders=\App\Models\Order::find(1);
+
+	return $orders;
+});
+
+Route::get('users', function(){
+	$users =\App\Models\User::all();
+
+	return $users;
+});
