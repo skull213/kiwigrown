@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="{{asset('css/styles.css')}}">
 	{{-- <link href="css/kube.css"  type="text/css" rel="stylesheet"> --}} {{-- the font problem --}}
 	<link href="css/flickerplate.css"  type="text/css" rel="stylesheet">
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
@@ -29,18 +29,21 @@
 				<ul id="menu" class="menu">
 					<li><a href="index.html">Home</a></li>
 					<li>
-					<!-- <div class="pure-menu pure-menu-horizontal">
+					<div class="pure-menu pure-menu-horizontal">
 					    <ul class="pure-menu-list">
 					        <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
 					            <a href="#" id="menuLink1" class="pure-menu-link">Shop</a>
 					            <ul class="pure-menu-children">
-					                <li class="pure-menu-item"><a href="products.html" class="pure-menu-link">Babies & Juniors</a></li>
-					                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Children</a></li>
-					                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Adults</a></li>
+
+					            @foreach(\App\Models\Category::all() as $category)
+					                <li class="pure-menu-item"><a href="{{url('categories/'.$category->id)}}" class="pure-menu-link">{{$category->name}}</a></li>
+					            @endforeach
+					                {{-- <li class="pure-menu-item"><a href="#" class="pure-menu-link">Children</a></li>
+					                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Adults</a></li> --}}
 					            </ul>
 					        </li>
 					    </ul>
-					</div> -->
+					</div>
 					</li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="contact.html">Contact</a></li>

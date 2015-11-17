@@ -47,13 +47,13 @@ Route::get('index', function () {
 Route::get('products', function () {
 	$products=\App\Models\Product::all();
 
-    return $products;
+    return view('products');
 });
 
-Route::get('categories', function(){
-	$categories=\App\Models\Category::all();
+Route::get('categories/{id}', function($id){
+	$category=\App\Models\Category::find($id);
 
-	return $categories;
+	return view("products",compact("category"));
 });
 
 Route::get('posts', function(){
@@ -73,3 +73,13 @@ Route::get('users', function(){
 
 	return $users;
 });
+
+
+// Route::get('categories/{id}', function($id){
+// 	$categories =\App\Models\Category::find($id);
+
+// 	return view('products');
+// });
+
+//$type = App\Models\Type::find(2);
+	//return $type->products;
