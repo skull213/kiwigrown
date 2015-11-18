@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "95da39fa4eb31262dd2efe264a4ff124",
-    "content-hash": "2224deb2b9913b3163684ba4527c89fe",
+    "hash": "bd9612a584fa963ab8162a4f44e76fd4",
+    "content-hash": "790a10d52c78f765faebc279d5fbdfb9",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -463,12 +463,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "0057e6f45792cd8ceb1fe133c21240aea0d10139"
+                "reference": "648add30883ccd91f5080bb231d8394bf39ba30f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/0057e6f45792cd8ceb1fe133c21240aea0d10139",
-                "reference": "0057e6f45792cd8ceb1fe133c21240aea0d10139",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/648add30883ccd91f5080bb231d8394bf39ba30f",
+                "reference": "648add30883ccd91f5080bb231d8394bf39ba30f",
                 "shasum": ""
             },
             "require": {
@@ -584,7 +584,57 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-11-17 03:42:52"
+            "time": "2015-11-17 13:48:39"
+        },
+        {
+            "name": "laravelcollective/html",
+            "version": "5.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LaravelCollective/html.git",
+                "reference": "5ad8377968ba3b4da91fc60ca98b2eef4df380fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/5ad8377968ba3b4da91fc60ca98b2eef4df380fc",
+                "reference": "5ad8377968ba3b4da91fc60ca98b2eef4df380fc",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "5.1.*",
+                "illuminate/routing": "5.1.*",
+                "illuminate/session": "5.1.*",
+                "illuminate/support": "5.1.*",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Collective\\Html\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                },
+                {
+                    "name": "Adam Engebretson",
+                    "email": "adam@laravelcollective.com"
+                }
+            ],
+            "time": "2015-11-06 18:14:38"
         },
         {
             "name": "league/flysystem",
@@ -2717,12 +2767,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "6f9251d0910483fcbe22ee7a47ed604e43070770"
+                "reference": "d82e69c1b34337eae1628c5e2e3b01d2082c4aa9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6f9251d0910483fcbe22ee7a47ed604e43070770",
-                "reference": "6f9251d0910483fcbe22ee7a47ed604e43070770",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d82e69c1b34337eae1628c5e2e3b01d2082c4aa9",
+                "reference": "d82e69c1b34337eae1628c5e2e3b01d2082c4aa9",
                 "shasum": ""
             },
             "require": {
@@ -2781,7 +2831,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-11-11 12:23:02"
+            "time": "2015-11-17 20:03:40"
         },
         {
             "name": "phpunit/phpunit-mock-objects",

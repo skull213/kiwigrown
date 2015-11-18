@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="{{asset('css/styles.css')}}">
-	{{-- <link href="css/kube.css"  type="text/css" rel="stylesheet"> --}} {{-- the font problem --}}
+	<link href="css/kube.css"  type="text/css" rel="stylesheet"> {{-- the font problem --}}
 	<link href="css/flickerplate.css"  type="text/css" rel="stylesheet">
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">

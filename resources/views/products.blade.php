@@ -14,17 +14,17 @@
 			<div class="productWrap">	
 				@foreach($category->products as $product)
 				<div class="product">
-			      <img src="img/pic6.jpg" class="p-img" draggable="false">
+			      <img src="{{asset('img/'.$product->photo)}}" class="p-img" draggable="false">
 			      <h1>{{$product->name}}</h1>
-			        <span class="price">{{$product->price}}</span>
+			        <span class="price"></span>
 			        <div class="buy">
 			          <div class="cart">
 			            <img src="http://atakan.work/ea/img/shcart.png" height="17" width="19">
-			            <span>Add to cart</span>
+			            <span><a href="{{url('products/'.$product->id)}}">add</a></span>
 			          </div>
 			          <div class="details">
-			            <img src="http://atakan.work/ea/img/eye.png" height="10" width="19" alt="">
-			            <span>300</span>
+			            {{-- <img src="http://atakan.work/ea/img/eye.png" height="10" width="19" alt=""> --}}
+			            <span>${{$product->price}}</span>
 			          </div>
 			        </div>
 				</div>

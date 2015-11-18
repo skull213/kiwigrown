@@ -20,6 +20,9 @@ Route::get('index', function () {
     return view('index');
 });
 
+Route::get('cart', function () {
+    return view('cart');
+});
 // Route::get('about', function () {
 //     return view('about');
 // });
@@ -50,6 +53,12 @@ Route::get('products', function () {
     return view('products');
 });
 
+Route::get('products/{id}', function ($id) {
+	$products=\App\Models\Product::find($id);
+
+    return view('productOverview', ['product'=>$products]);
+});
+
 Route::get('categories/{id}', function($id){
 	$category=\App\Models\Category::find($id);
 
@@ -74,6 +83,20 @@ Route::get('users', function(){
 	return $users;
 });
 
+
+Route::post('cart/add', function(){
+
+	$item = $request->only("id");
+
+	$product = \App\Models\Product::find($item["id"]);
+
+	$item ["name"] = $product->name;
+	$item ["price"] = $product->price;
+
+	$cart =  \App\Models\Cart::add($item);
+
+	return $cart;
+});
 
 // Route::get('categories/{id}', function($id){
 // 	$categories =\App\Models\Category::find($id);

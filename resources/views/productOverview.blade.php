@@ -13,7 +13,7 @@
 		<div class="container">
 		  <div class="productdetailbox row">
 		    <div class="col-xs-4 fig">
-		      <img src="img/pic8.jpg" alt="" />
+		      <img src="{{asset('img/'.$product->photo)}}" alt="" />
 		    </div>
 		    <div class="col-xs-8 main">
 		      <div class="socialshare">
@@ -21,17 +21,17 @@
 		        <span class="twitter">t</span>
 		        <span class="mail">M</span>
 		      </div>
-		      <h2>NICE GREEN T-SHIRT</h2>
-		      <p>A great look. Priced right. And this t-shirt feels softer with every wash - it's no wonder our customers love this "ultra" popular style!</p>
+		      <h2>{{$product->name}}</h2>
+		      <p>{{$product->description}}</p>
 		      <h4 class="price-kit">
-		       Price $30 &nbsp;&nbsp;&nbsp;&nbsp;Qty&nbsp;
-		        <input class="qtybox" type="number" min="1" max="50" step="1" value="30" required="true" /> 
+		       Price{{$product->price}} &nbsp;&nbsp;&nbsp;&nbsp;Qty&nbsp;
 		        <select>
-					  <option value="volvo">S</option>
-					  <option value="saab">M</option>
-					  <option value="opel">Opel</option>
-					  <option value="audi">Audi</option>
+					  <option value="s">S</option>
+					  <option value="m">M</option>
+					  <option value="l">L</option>
+					  <option value="xl">XL</option>
 				</select>
+				<a href="#" class="btn" outline>Add to Cart</a>
 		      </h4>
 		    </div>
 		  </div>
