@@ -83,20 +83,23 @@ Route::get('users', function(){
 	return $users;
 });
 
+Route::get('cart', "CartController@showCart");
+Route::post('cartItems', "CartController@addItem");
 
-Route::post('cart/add', function(){
 
-	$item = $request->only("id");
+// Route::post('cart/add', function(){
 
-	$product = \App\Models\Product::find($item["id"]);
+// 	$item = $request->only("id");
 
-	$item ["name"] = $product->name;
-	$item ["price"] = $product->price;
+// 	$product = \App\Models\Product::find($item["id"]);
 
-	$cart =  \App\Models\Cart::add($item);
+// 	$item [] = $product->name;
+// 	$item ["price"] = $product->price;
 
-	return $cart;
-});
+// 	$cart =  \App\Models\Cart::add($item);
+
+// 	return $cart;
+// });
 
 // Route::get('categories/{id}', function($id){
 // 	$categories =\App\Models\Category::find($id);
