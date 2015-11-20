@@ -28,9 +28,9 @@ Route::get('cart', function () {
 // });
 
 
-// Route::get('contactUs', function () {
-//     return view('contactUs');
-// });
+Route::get('contactUs', function () {
+    return view('contactUs');
+});
 
 
 // Route::get('productOverview', function () {
@@ -47,17 +47,17 @@ Route::get('cart', function () {
 
 
 
-Route::get('products', function () {
-	$products=\App\Models\Product::all();
+// Route::get('products', function () {
+// 	$products=\App\Models\Product::all();
 
-    return view('products');
-});
+//     return view('products');
+// });
 
-Route::get('products/{id}', function ($id) {
-	$products=\App\Models\Product::find($id);
+// Route::get('products/{id}', function ($id) {
+// 	$products=\App\Models\Product::find($id);
 
-    return view('productOverview', ['product'=>$products]);
-});
+//     return view('productOverview', ['product'=>$products]);
+// });
 
 Route::get('categories/{id}', function($id){
 	$category=\App\Models\Category::find($id);
@@ -71,17 +71,19 @@ Route::get('posts', function(){
 	return $posts;
 });
 
-Route::get('orders', function(){
-	$orders=\App\Models\Order::find(1);
+// Route::get('orders', function(){
+// 	$orders=\App\Models\Order::find(1);
 
-	return $orders;
-});
+// 	return $orders;
+// });
 
-Route::get('users', function(){
-	$users =\App\Models\User::all();
+// Route::get('users', function(){
+// 	$users =\App\Models\User::all();
 
-	return $users;
-});
+// 	return $users;
+// });
+
+Route::resource('products', 'ProductsController');
 
 Route::get('cart', "CartController@showCart");
 Route::post('cartItems', "CartController@addItem");

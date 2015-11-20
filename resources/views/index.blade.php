@@ -122,31 +122,33 @@
 		</section>
 		<section>
 			<h1>News and Events</h1>
+			@foreach(\App\Models\Post::all() as $post)
 			<div class="blog-wrapper">
 				<div class="blog-card">
 					<div class="card-img"><img src="img/pic33.jpg" alt="">
-						<h1>New York</h1>
+						<h1>{{$post->title}}</h1>
 					</div>
-					<div class="card-details"><span><i class="fa fa-calendar"></i>AUG 4</span><span><i class="fa fa-heart"></i>102</span></div>
-					<div class="card-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si verbum sequimur, primum longius verbum praepositum quam bonum.</p></div>
+					<div class="card-details"><span><i class="fa fa-calendar"></i>{{$post->created_at}}</span><span><i class="fa fa-heart"></i>102</span></div>
+					<div class="card-text"><p>{{$post->content}}</p></div>
 					<div class="read-more">Read More</div>
 				</div>
-					<div class="blog-card">
+			@endforeach
+				{{-- <div class="blog-card">
 					<div class="card-img"><img src="img/ccc.jpg" alt="">
 						<h1>San Francisco</h1>
 					</div>
 					<div class="card-details"><span><i class="fa fa-calendar"></i>AUG 1</span><span><i class="fa fa-heart"></i>265</span></div>
 					<div class="card-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si verbum sequimur, primum longius verbum praepositum quam bonum.</p></div>
 					<div class="read-more">Read More</div>
-				</div>
-					<div class="blog-card" id="hide">
+				</div> --}}
+				{{-- <div class="blog-card" id="hide">
 					<div class="card-img"><img src="img/pic34.jpg" alt="">
 						<h1>San Francisco</h1>
 					</div>
 					<div class="card-details"><span><i class="fa fa-calendar"></i>AUG 1</span><span><i class="fa fa-heart"></i>265</span></div>
 					<div class="card-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si verbum sequimur, primum longius verbum praepositum quam bonum.</p></div>
 					<div class="read-more">Read More</div>
-				</div>
+				</div> --}}
 			</div>
 		</section>		
 @endsection		
