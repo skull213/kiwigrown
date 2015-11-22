@@ -10,7 +10,7 @@
 
 		<div class="contact-container">
 				<div class="contact-details">
-					<h1>Add new product</h1>
+					<h1>Edit product</h1>
 					<p>possimus laboriosam. Porro et sapiente odit excepturi dolorem voluptate, voluptatum aliquid sint odio accusamus sit nostrum impedit quae, quia ullam?</p><br><br><br>
 					<ul>
 						<li><i>Adrdress: </i><address>795 South Park Avenue, Door 6 Wonderland, CA 94107, Australia</address></li>
@@ -22,35 +22,27 @@
 				</div>
 
 		<link href="{{asset('css/kube.css')}}"  type="text/css" rel="stylesheet">
-		{!! Form::open(array('url' => 'products','files'=>"true", "class" => "forms")) !!}  
+		{!! Form::model($post,array('url' => 'posts/'.$post->id,'method'=>'put', "class" => "forms")) !!}  
 				
 				<row>
 					<column cols="6">
-					{!!Form::label('name', 'Product name')!!}
-					{!!Form::text('name')!!}
+					{!!Form::label('title', 'Title')!!}
+					{!!Form::text('title')!!}
 					</column>
 				</row>	
 
 					{!!$errors->first('name','<p class="error">:message</p>')!!}
 					
-					{!!Form::label('description', 'description')!!}
-					{!!Form::textarea('description')!!}
+					{!!Form::label('content', 'content')!!}
+					{!!Form::textarea('constant(name)')!!}
 					{!!$errors->first('description','<p class="error">:message</p>')!!}
 
-					{!!Form::label('price', 'Price')!!}
-					{!!Form::text('price')!!}
-					{!!$errors->first('price','<p class="error">:message</p>')!!}
 
 					{!!Form::label('photo', 'Photo')!!}
 					{!!Form::file('photo')!!}
-
-					{!!Form::select('size', array('L' => 'Large', 'S' => 'Small','M' => 'Medium'), 'S')!!}
-
-					{!!Form::label('category_id', 'Product Type')!!}
-					{!!Form::select('category_id',\App\Models\Category::lists("name","id"))!!}
 					
 					
-					<input  type="submit" value="Send">	
+					<input  type="submit" value="Update">	
 			{!! Form::close() !!}	
 		</div>
 			</div>	

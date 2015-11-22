@@ -126,10 +126,10 @@
 			<div class="blog-wrapper">
 				<div class="blog-card">
 					<div class="card-img"><img src="img/pic33.jpg" alt="">
-						<h1>{{$post->title}}</h1>
+						<h1 data-field="title" data-postid="{{$post->id}}">{{$post->title}}</h1>
 					</div>
 					<div class="card-details"><span><i class="fa fa-calendar"></i>{{$post->created_at}}</span><span><i class="fa fa-heart"></i>102</span></div>
-					<div class="card-text"><p>{{$post->content}}</p></div>
+					<div class="card-text"><p data-field="content" data-postid="{{$post->id}}">{{$post->content}}</p></div>
 					<div class="read-more">Read More</div>
 				</div>
 			@endforeach

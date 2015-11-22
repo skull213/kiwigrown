@@ -21,11 +21,10 @@
 		        <span class="twitter"><i class="fa fa-twitter-square"></i></span>
 		        <span class="mail"><i class="fa fa-envelope-o"></i></span>
 		      </div>
-		      <h2>{{$product->name}}</h2>
-		      <p>{{$product->description}}</p>
-		      <h4 class="price-kit">
-		       Price: ${{$product->price}}
-
+		      <h2 data-field="name">{{$product->name}}</h2>
+		      <p data-field="description">{{$product->description}}</p>
+		      <h4 data-field="price" class="price-kit">Price: ${{$product->price}}</h4>
+				
 				{!!Form::open(["url"=>"cartItems"])!!}
 
 				{!!Form::label("size","size")!!}
@@ -53,7 +52,7 @@
 
 				
 
-		      </h4>
+		      
 		    </div>
 		  </div>
 		</div>

@@ -1,14 +1,15 @@
 <!DOCTYPE html>
+@if(Request::ajax() == false)
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="{{asset('css/styles.css')}}">
-	<link href="{{asset('css/kube.css')}}"  type="text/css" rel="stylesheet"> {{-- the font problem --}}
+	{{-- <link href="{{asset('css/kube.css')}}"  type="text/css" rel="stylesheet"> --}} {{-- the font problem --}}
 	<link href="css/flickerplate.css"  type="text/css" rel="stylesheet">
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-schemes.min.css">
+	{{-- <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-schemes.min.css"> --}}
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed|Lato' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
@@ -48,14 +49,16 @@
 					<li><a href="about.html">About</a></li>
 					<li><a href="contact.html">Contact</a></li>
 					<li><a href="news.html">News</a></li>
-					<li><a href="news.html"><i class="fa fa-shopping-cart"></i><span> 1</span></a></li>
+					<li><a href="news.html"><i class="fa fa-shopping-cart"></i><span> 1</span> <span>$10</span></a></li>
 				</ul>
 			</div>
 		</nav>
 	</header>
 	<main>
+@endif	
 		
 	@yield('content')
+@if(Request::ajax() == false)
 
 	</main>
 	<footer>
@@ -77,12 +80,16 @@
 	</div>
 </footer>
 
+<div id="token">{{ csrf_token() }}</div>
+
 
 
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script type="text/javascript" src="js/scripts.js"></script>
+<script src="{{asset('js/juery.jeditable.js')}}"></script>
+<script src="{{asset('js/history/html5/jquery.history.js')}}" type="text/javascript"></script>
+<script type="text/javascript" src="{{asset('js/scripts.js')}}"></script>
 <script src="js/flickerplate.min.js" type="text/javascript"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJKH7E9wuNURt8ETovoQFUuKzEO4g4J9o&callback=initMap"async defer></script>
 <script src="js/geo-min.js"></script>
@@ -101,3 +108,4 @@ $(function(){
 </script>
 </body>
 </html>
+@endif

@@ -1,5 +1,5 @@
-@extends('templates.main')
 
+@extends('templates.main')
 
 @section('content')
 	<section class="section1">
@@ -23,6 +23,7 @@
 					</ul>
 						
 				</div>
+				<link href="{{asset('css/kube.css')}}"  type="text/css" rel="stylesheet">
 				<div class="form">
 				<h1>contact us</h1>
 					<form method="post" action="" class="forms">

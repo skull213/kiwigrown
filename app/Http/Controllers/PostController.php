@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class ProductsController extends Controller
+class PostController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -26,7 +26,7 @@ class ProductsController extends Controller
      */
     public function create()
     {
-        return view('createProduct');
+        //
     }
 
     /**
@@ -35,20 +35,9 @@ class ProductsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(\App\Http\Requests\CreateProductRequest $request)
+    public function store(Request $request)
     {
-        $product = \App\Models\Product::create($request->all());
-
-        $fileName = \Carbon\Carbon::now()->timestamp."_product.jpg";
-
-        $request->file('photo')->move('img',$fileName);
-        $product->photo = $fileName;
-
-        $product->save();
-
-        return redirect('categories/'.$product->category->id);
-
-
+        //
     }
 
     /**
@@ -60,9 +49,6 @@ class ProductsController extends Controller
     public function show($id)
     {
         //
-        $products=\App\Models\Product::find($id);
-
-        return view('productOverview', ['product'=>$products]);
     }
 
     /**
@@ -83,20 +69,20 @@ class ProductsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update($request, $id)
     {
         //
-        $product = \App\Models\Product::find($id);
+
+        $post = \App\Models\Post::find($id);
 
         $value = $request->input("value");
         $field = $request->input("field");
 
-        $product->$field = $value;
+        $post->field = $value;
 
-        $product->save();
+        $post->save();
 
         return $value;
-
     }
 
     /**
@@ -108,10 +94,5 @@ class ProductsController extends Controller
     public function destroy($id)
     {
         //
-         $product = \App\Models\Product::find($id);
-
-        $product->delete();
-
-        return redirect("categories/".$product->category->id);
     }
 }

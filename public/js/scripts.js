@@ -286,16 +286,42 @@ function initMap() {
 }
 
 //--------------------------------------------------------------->>
-// // Remove Items From Cart
-// $('a.remove').click(function(){
-//   event.preventDefault();
-//   $( this ).parent().parent().parent().hide( 400 );
- 
-// })
+// $(function()){
 
-// // Just for testing, show all items
-//   $('a.btn.continue').click(function(){
-//     $('li.items').show(400);
-//   })
 
-//   
+// $("[data-field]").on("click",function(i,el){
+
+//         var url = window.location.href + "/" + $(el).attr("data-postid");
+//         var options = {
+//             type:"textarea",
+//             cssclass:"editable",
+//             submitdata:{
+//                 _method:"PUT",
+//                 _token:$("#token").text(),
+//                 field: $(this).attr("data-field")
+//             },
+//             submit: "OK"
+//         };
+//         $(el).editable(url,options);
+//     });
+// };
+
+$(function(){
+
+
+    $("[data-field]").each(function(i,el){
+
+        var url = window.location.href + "/" + $(el).attr("data-postid");
+        var options = {
+            type:"textarea",
+            submitdata:{
+                _method:"PUT",
+                _token:$("#token").text(),
+                field: $(el).attr("data-field")
+            },
+            submit: "OK"
+        };
+        $(el).editable(url,options);
+    });
+
+});
