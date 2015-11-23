@@ -22,6 +22,7 @@
 				</div>
 
 		<link href="{{asset('css/kube.css')}}"  type="text/css" rel="stylesheet">
+
 		{!! Form::open(array('url' => 'products','files'=>"true", "class" => "forms")) !!}  
 				
 				<row>
@@ -50,7 +51,7 @@
 					{!!Form::select('category_id',\App\Models\Category::lists("name","id"))!!}
 					
 					
-					<input  type="submit" value="Send">	
+					<input type="submit" class="btn" outline value="update" />	
 			{!! Form::close() !!}	
 		</div>
 			</div>	

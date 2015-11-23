@@ -27,6 +27,7 @@
 			            <span>${{$product->price}}</span>
 			          </div>
 			        </div>
+			        @if(Auth::check())
 			        <div class="buy">
 			          <div class="cart">
 			          	{!! Form::open(["url"=>"products/".$product->id,"method"=>"delete"])!!}
@@ -40,6 +41,7 @@
 			            <a href="{{url('products/'.$product->id.'/edit')}}"><i class="fa fa-pencil-square-o fa fa-2x"></i></a>	
 			          </div>
 			        </div>
+			        @endif
 				</div>
 				@endforeach
 			</div>

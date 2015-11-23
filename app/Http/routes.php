@@ -100,8 +100,12 @@ Route::put('posts/{id}', function($id){
 // 	return $users;
 // });
 
+Route::get('login',"LoginController@showLoginForm");
+Route::post('login',"LoginController@processLogin");
+
 Route::resource('products', 'ProductsController');
 Route::resource('posts', 'PostController');
+Route::get('logout',"LoginController@logout");
 
 Route::get('cart', "CartController@showCart");
 Route::post('cartItems', "CartController@addItem");

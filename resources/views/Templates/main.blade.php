@@ -49,7 +49,10 @@
 					<li><a href="about.html">About</a></li>
 					<li><a href="contact.html">Contact</a></li>
 					<li><a href="news.html">News</a></li>
-					<li><a href="news.html"><i class="fa fa-shopping-cart"></i><span> 1</span> <span>$10</span></a></li>
+					@if(Auth::check())
+					<li><a href="{{url('logout')}}">Log out</a></li>
+					@endif
+					<li><a href="news.html"><i class="fa fa-shopping-cart"></i><span> 1</span></a></li>
 				</ul>
 			</div>
 		</nav>
@@ -80,7 +83,7 @@
 	</div>
 </footer>
 
-<div id="token">{{ csrf_token() }}</div>
+<div style="display:none;" id="token">{{ csrf_token() }}</div>
 
 
 

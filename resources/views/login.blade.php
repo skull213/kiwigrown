@@ -22,35 +22,24 @@
 				</div>
 
 		<link href="{{asset('css/kube.css')}}"  type="text/css" rel="stylesheet">
-		{!! Form::open(array('url' => 'products','files'=>"true", "class" => "forms")) !!}  
+		<div class="form">
+		<h1>Admin Log in</h1>
+		{!! Form::open(['url'=>'login', "class" => "forms"])!!}  
 				
 				<row>
 					<column cols="6">
-					{!!Form::label('name', 'Product name')!!}
-					{!!Form::text('name')!!}
+					{!!Form::label('username', 'User Name')!!}
+					{!!Form::text('username')!!}
+					</column>
+					<column cols="6">
+					{!!Form::label('password', 'Password')!!}
+					{!!Form::password('password')!!}
 					</column>
 				</row>	
 
 					{!!$errors->first('name','<p class="error">:message</p>')!!}
-					
-					{!!Form::label('description', 'description')!!}
-					{!!Form::textarea('description')!!}
-					{!!$errors->first('description','<p class="error">:message</p>')!!}
-
-					{!!Form::label('price', 'Price')!!}
-					{!!Form::text('price')!!}
-					{!!$errors->first('price','<p class="error">:message</p>')!!}
-
-					{!!Form::label('photo', 'Photo')!!}
-					{!!Form::file('photo')!!}
-
-					{!!Form::select('size', array('L' => 'Large', 'S' => 'Small','M' => 'Medium'), 'S')!!}
-
-					{!!Form::label('category_id', 'Product Type')!!}
-					{!!Form::select('category_id',\App\Models\Category::lists("name","id"))!!}
-					
-					
-					<input  type="submit" value="Send">	
+	
+					<input type="submit" class="btn" outline value="Log in" />		
 			{!! Form::close() !!}	
 		</div>
 			</div>	
