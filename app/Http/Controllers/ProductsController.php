@@ -74,6 +74,9 @@ class ProductsController extends Controller
     public function edit($id)
     {
         //
+        $product = \App\Models\Product::find($id);
+
+        return view('editProduct',['product'=>$product]);
     }
 
     /**
@@ -83,19 +86,17 @@ class ProductsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(\App\Http\Requests\UpdateProductRequest $request, $id)
     {
         //
         $product = \App\Models\Product::find($id);
 
-        $value = $request->input("value");
-        $field = $request->input("field");
-
-        $product->$field = $value;
+        $product->fill($request->all());
 
         $product->save();
 
-        return $value;
+        return redirect("categories/".$product->category->id);
+       
 
     }
 

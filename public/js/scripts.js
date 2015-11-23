@@ -311,7 +311,7 @@ $(function(){
 
     $("[data-field]").each(function(i,el){
 
-        var url = window.location.href + "/" + $(el).attr("data-postid");
+        var url = 'posts/' +  $(el).attr("data-postid");
         var options = {
             type:"textarea",
             submitdata:{
@@ -321,6 +321,7 @@ $(function(){
             },
             submit: "OK"
         };
+        console.log(options);
         $(el).editable(url,options);
     });
 

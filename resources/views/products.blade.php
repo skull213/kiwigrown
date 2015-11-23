@@ -33,9 +33,12 @@
 			            <span>{!! Form::submit("Delete")!!}</span>
 			            {!! Form::close()!!}
 			          </div>
-			          {{-- <div class="details"> 	
-			            <span><i class="fa fa-pencil-square-o fa fa-2x"></i></span>
-			          </div> --}}
+			          <div class="details">
+			          {{-- 	{!! Form::model($product,array('url' => 'products/'.$product->id.'/edit')) !!} 	
+			            <span>{!! Form::submit("update")!!}</span>
+			            {!! Form::close() !!} --}}
+			            <a href="{{url('products/'.$product->id.'/edit')}}"><i class="fa fa-pencil-square-o fa fa-2x"></i></a>	
+			          </div>
 			        </div>
 				</div>
 				@endforeach

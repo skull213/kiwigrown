@@ -65,10 +65,27 @@ Route::get('categories/{id}', function($id){
 	return view("products",compact("category"));
 });
 
-Route::get('posts', function(){
-	$posts=\App\Models\Post::all();
+// Route::get('posts', function(){
+// 	$posts=\App\Models\Post::all();
 
-	return $posts;
+// 	return $posts;
+// });
+
+Route::put('posts/{id}', function($id){
+	
+
+	
+        $post = \App\Models\Post::find($id);
+
+        $value = \Request::input("value");
+        $field = \Request::input("field");
+
+        $post->$field = $value;
+
+        $post->save();
+
+        return $value;
+       
 });
 
 // Route::get('orders', function(){
@@ -84,6 +101,7 @@ Route::get('posts', function(){
 // });
 
 Route::resource('products', 'ProductsController');
+Route::resource('posts', 'PostController');
 
 Route::get('cart', "CartController@showCart");
 Route::post('cartItems', "CartController@addItem");

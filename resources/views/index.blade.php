@@ -54,15 +54,15 @@
 			<hr class="my_title1" />
 			<!-- <h1 class="heading">Clerance</h1> -->
 			<div class="productWrap">
-				@foreach(\App\Models\Product::all() as $products)	
+				@foreach(\App\Models\Product::orderBy('id','desc')->take(4)->get() as $products)	
 					<div class="product">
-				      <img src="img/pic6.jpg" class="p-img" draggable="false" alt="">
+				      <img src="{{asset('img/'.$products->photo)}}" class="p-img" draggable="false" alt="">
 				      <h1>{{$products->name}}</h1>
 				        <span class="price">{{$products->price}}</span>
 				        <div class="buy">
 				          <div class="cart">
 				            <img src="http://atakan.work/ea/img/shcart.png" height="17" width="19" alt="">
-				            <span>Add to cart</span>
+				            <span><a href="{{url('products/'.$products->id)}}">Add to Cart</a></span>
 				          </div>
 				          <div class="details">
 					
@@ -76,15 +76,16 @@
 		<section>
 		<hr class="my_title" />	
 			<div class="productWrap">
-				@foreach(\App\Models\Product::all() as $products)	
+				<?php $category = \App\Models\Category::find(5) ?>
+				@foreach($category->products()->take(4)->get() as $product)
 					<div class="product">
-				      <img src="img/pic6.jpg" class="p-img" draggable="false" alt="">
-				      <h1>{{$products->name}}</h1>
-				        <span class="price">{{$products->price}}</span>
+				      <img src="{{asset('img/'.$product->photo)}}" class="p-img" draggable="false" alt="">
+				      <h1>{{$product->name}}</h1>
+				        <span class="price">{{$product->price}}</span>
 				        <div class="buy">
 				          <div class="cart">
 				            <img src="http://atakan.work/ea/img/shcart.png" height="17" width="19" alt="">
-				            <span>Add to cart</span>
+				            <span><a href="{{url('products/'.$product->id)}}">Add to Cart</a></span>
 				          </div>
 				          <div class="details">
 					

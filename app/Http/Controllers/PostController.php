@@ -73,16 +73,17 @@ class PostController extends Controller
     {
         //
 
-        $post = \App\Models\Post::find($id);
+        // $post = \App\Models\Post::find($id);
 
-        $value = $request->input("value");
-        $field = $request->input("field");
+        // $value = $request->input("value");
+        // $field = $request->input("field");
 
-        $post->field = $value;
+        // $post->field = $value;
 
-        $post->save();
+        // $post->save();
 
-        return $value;
+        // return $value;
+        return "Hi";
     }
 
     /**
