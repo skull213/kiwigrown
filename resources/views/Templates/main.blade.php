@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="{{asset('css/styles.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('css/custom.css')}}">
 	{{-- <link href="{{asset('css/kube.css')}}"  type="text/css" rel="stylesheet"> --}} {{-- the font problem --}}
 	<link href="css/flickerplate.css"  type="text/css" rel="stylesheet">
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
@@ -23,12 +24,12 @@
 		<input type="checkbox" id="xBxHack" />
 		<nav id="mainNav" class="mainNav">
 			<div class="container">
-				<div class="logo"><a href="#">Kiwi<strong></strong>Grown</a></div>
+				<div class="logo"><a href="{{url('index')}}">Kiwi<strong></strong>Grown</a></div>
 				<label class="navBars" for="xBxHack">
 					<i class="fa fa-bars"></i>
 				</label>
 				<ul id="menu" class="menu">
-					<li><a href="index.html">Home</a></li>
+					<li><a href="{{url('index')}}">Home</a></li>
 					<li>
 					<div class="pure-menu pure-menu-horizontal">
 					    <ul class="pure-menu-list">
@@ -46,13 +47,12 @@
 					    </ul>
 					</div>
 					</li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="{{url('contactUs')}}">Contact</a></li>
-					<li><a href="news.html">News</a></li>
+					<li><a href="{{url('about')}}">About Us</a></li>
+					<li><a href="{{url('contactUs')}}">Contact Us</a></li>
 					@if(Auth::check())
 					<li><a href="{{url('logout')}}">Log out</a></li>
 					@endif
-					<li><a href="news.html"><i class="fa fa-shopping-cart"></i><span> 1</span></a></li>
+					<li><a href="{{url('cart')}}"><i class="fa fa-shopping-cart"></i><span> 1</span></a></li>
 				</ul>
 			</div>
 		</nav>
