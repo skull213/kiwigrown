@@ -26,32 +26,49 @@
 				<link href="{{asset('css/kube.css')}}"  type="text/css" rel="stylesheet">
 				<div class="form">
 				<h1>contact us</h1>
-					<form method="post" action="" class="forms">
+					{!!Form::open(array('url'=>'contactUs',"class" => "forms", "method" => "post"))!!}
 					    <row>
 					        <column cols="6">
-					            <label>Email</label>
-					            <input type="email">
+					            {!!Form::label('firstname','First Name')!!}
+					            {!!Form::text('firstname','')!!}
+					            {!! $errors->first('firstname','<p class="error">:message</p>') !!}
 					        </column>
 					        <column cols="6">
-					            <label>Email</label>
-					            <input type="email">
+					            {!!Form::label('lastname','Last Name')!!}
+					            {!!Form::text('lastname','')!!}
+					            {!! $errors->first('lastname','<p class="error">:message</p>') !!}
 					        </column>
 					    </row>
-					     <row>
+					    <row>
 					        <column cols="6">
-					            <label>Email</label>
-					            <input type="email">
+					            {!!Form::label('telephone','Telephone:')!!}
+					            {!!Form::text('telephone','')!!}
+					             {!! $errors->first('telephone','<p class="error">:message</p>') !!}
 					        </column>
 					        <column cols="6">
-					            <label>Email</label>
-					            <input type="email">
+					            {!!Form::label('cellphone','Cellphone:')!!}
+					            {!!Form::text('cellphone','')!!}
+					            {!! $errors->first('cellphone','<p class="error">:message</p>') !!}
+					        </column>
+					    </row>
+						 <row>
+					        <column cols="6">
+					            {!!Form::label('company','Company')!!}
+					            {!!Form::text('company','')!!}
+					            {!! $errors->first('company','<p class="error">:message</p>') !!}
+					        </column>
+					        <column cols="6">
+					            {!!Form::label('email','Email:')!!}
+					            {!!Form::text('email','')!!}
+					            {!! $errors->first('email;','<p class="error">:message</p>') !!}
 					        </column>
 					    </row>
 					    <section>
-					        <label>Message</label>
-					        <textarea rows="6"></textarea>
+					    		{!!Form::label('message','Message:')!!}
+					            {!!Form::textarea('message','')!!}
+					             {!! $errors->first('message','<p class="error">:message</p>') !!}
 					    </section>
-				    	<button outline>Button</button>
+				    	<input type="submit" class="btn" outline value="Send" />	
 				</form>
 			</div>
 		</div>

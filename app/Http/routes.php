@@ -20,17 +20,22 @@ Route::get('index', function () {
     return view('index');
 });
 
-Route::get('cart', function () {
-    return view('cart');
-});
+Route::get('about', "PagesController@showAbout");
+
+Route::get('contactUs',"PagesController@showContact");
+
+
+// Route::get('cart', function () {
+//     return view('cart');
+// });
 // Route::get('about', function () {
 //     return view('about');
 // });
 
 
-Route::get('contactUs', function () {
-    return view('contactUs');
-});
+// Route::get('contactUs', function () {
+//     return view('contactUs');
+// });
 
 
 // Route::get('productOverview', function () {
@@ -109,6 +114,18 @@ Route::get('logout',"LoginController@logout");
 
 Route::get('cart', "CartController@showCart");
 Route::post('cartItems', "CartController@addItem");
+
+
+Route::post('contactUs',function(\App\Http\Requests\ContactFormRequest $request){
+    $data = \Request::all();
+
+    Mail::send('testEmail', $data, function($massage) use ($data){
+
+        $massage->to ('mirompm@gmail.com')->form($data['email'])->subject('KiwiGrown');
+    });
+
+    return redirect('contactUs')->with("massage_succes","Thank you");
+});
 
 
 // Route::post('cart/add', function(){

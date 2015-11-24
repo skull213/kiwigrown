@@ -47,7 +47,7 @@
 					</div>
 					</li>
 					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="{{url('contactUs')}}">Contact</a></li>
 					<li><a href="news.html">News</a></li>
 					@if(Auth::check())
 					<li><a href="{{url('logout')}}">Log out</a></li>

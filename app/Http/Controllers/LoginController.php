@@ -27,7 +27,7 @@ class LoginController extends Controller
             
 
         }else{
-             return redirect("login")->with("message","Try again!");
+            return redirect("login")->with("message","Try again!");
             //return \Hash::make(1);
         }
         
@@ -35,7 +35,7 @@ class LoginController extends Controller
 
     public function logout(\Illuminate\Contracts\Auth\Guard $auth){
         $auth->logout();
-        return redirect("index");
+        return redirect("login");
     	
     }
 }

@@ -10,7 +10,8 @@
         "laravel/framework": "5.1.*",
         "laravelcollective/html": "5.1.*",
         "moltin/laravel-cart": "dev-master",
-        "nesbot/carbon": "~1.14" 
+        "nesbot/carbon": "~1.14",
+        "guzzlehttp/guzzle": "~5.3|~6.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

@@ -11,7 +11,10 @@
 		</section>
 		<hr class="my_title" />
 		<div class="products">
-			<div class="productWrap">	
+			<div class="productWrap">
+				<?php $products = $category->products()->paginate(8);
+					$products->setPath("");
+				  ?>	
 				@foreach($category->products as $product)
 				<div class="product">
 			      <img src="{{asset('img/'.$product->photo)}}" class="p-img" draggable="false">
@@ -44,6 +47,7 @@
 			        @endif
 				</div>
 				@endforeach
+				{!! $products->render() !!}
 			</div>
 
 		</div>	
