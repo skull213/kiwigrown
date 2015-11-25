@@ -34,6 +34,7 @@ class CartController extends Controller
     	$item["name"] = $product->name;
     	$item["price"] = $product->price;
     	$item["size"] = $request->get("size");
+        $item["photo"] = $product->photo;
 
 
     	Cart::insert($item);
@@ -41,5 +42,33 @@ class CartController extends Controller
     	return redirect("cart");
 
     }
+
+    public function removeItem(Request $request,$id){
+        //$item = $request->only("id","quantity");
+
+       // $product = \App\Models\Product::find($item["id"]);
+
+
+        Cart::item($id)->remove();
+
+        return redirect("cart");
+
+    }
+
+
+    public function checkout(){
+
+         $data = \Request::all();
+
+         Mail::send('orderemail', $data, function ($m)  {
+                $m->from('hello@app.com', 'Your Application');
+
+                $m->to("miro@gmail.com", "Admin")->subject('Your Reminder!');
+        });
+
+        return redirect("cart");
+    }
+
+
     
 }

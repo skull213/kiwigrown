@@ -14,7 +14,7 @@
     
     <div class="contact-container">
         <div class="contact-details">
-          <h1>Get in touch</h1>
+          <h1>Shipping <i class="fa fa-truck"></i></h1>
           <p>possimus laboriosam. Porro et sapiente odit excepturi dolorem voluptate, voluptatum aliquid sint odio accusamus sit nostrum impedit quae, quia ullam?</p><br><br><br>
           <ul>
             <li><i>Adrdress: </i><address>795 South Park Avenue, Door 6 Wonderland, CA 94107, Australia</address></li>
@@ -25,59 +25,37 @@
             
         </div>
         <div class="form">
-        <h1>Get in touch</h1>
+        <h1>Cart  <i class="fa fa-shopping-cart "></i></h1>
         <div id="container">
 <table>
-  <!--<tr style="text-align:center;">
-    <td>Image</td>
-    <td>Name</td>
-    <td>Price</td>
-    <td>Amount</td>
-    <td>Subtotal</td>
-    <td> </td>
-  </tr>-->
+  @foreach(Cart::contents() as $item)
   <tr class="p">
-    <td class="image"><img src="img/pic8.jpg" /></td>
-    <td class="name">iPod touch</td>
-    <td class="price">$299.99</td>
-    <td class="amount"><input type="number" value="1" min="0" /></td>
+    <td class="image"><img src="{{asset('img/'.$item->photo)}}" /></td>
+    <td class="name"><strong>item</strong><br>{{$item->name}}</td>
+    <td class="price"><strong>price</strong><br>${{$item->price}}</td>
+    <td class="amount">quantity<br>{{$item->quantity}}</td>
     <td class="pricesubtotal"></td>
-    <td class="remove"><div><a href=""><i class="fa fa-times"></i></a></div></td>
+    <td class="remove"><div><a href="{{url('removeItem/'.$item->identifier)}}"><i class="fa fa-times"></i></a></div></td>
   </tr>
   
   <tr>
     <td> </td>
     <td> </td>
     <td> </td>
-    <td>Subtotal:</td>
+    <td><strong>Subtotal:</strong>${{$item->price * $item->quantity}}</td>
     <td class="totalpricesubtotal"></td>
     <td> </td>
   </tr>
-    <tr class="p">
-    <td class="image"><img src="img/pic8.jpg" /></td>
-    <td class="name">iPod touch</td>
-    <td class="price">$299.99</td>
-    <td class="amount"><input type="number" value="1" min="0" /></td>
-    <td class="pricesubtotal"></td>
-    <td class="remove"><div><a href=""><i class="fa fa-times"></i></a></div></td>
-  </tr>
+  @endforeach
   
-  <tr>
-    <td> </td>
-    <td> </td>
-    <td> </td>
-    <td>Subtotal:</td>
-    <td class="totalpricesubtotal"></td>
-    <td> </td>
-  </tr>
   <tr>
     <td style="border-top:1px solid white" colspan="6"><br />
       {{-- With 5% sales tax <span class="taxval"></span> and <span class="shipping">10</span>$ shipping:<br /> --}}
-      <span class="big">Total: $<span class="realtotal">0</span></span>
+      <span class="big">Total: <span class="realtotal">${{Cart::total()}}</span></span>
     </td>
   </tr>
 </table>
-  <div id="checkout"><button class="pure-button pure-button-primary">Order</button></div>
+  <div id="checkout"><a href="{{url('orderForm')}}" class="pure-button pure-button-primary">Make Order</a></div>
 <div id="footer">
   <ul>
     <li>Change the amount of stuff and see the subtotal and total change</li>

@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('orderForm', function () {
+    return view('orderForm');
+});
+
 
 Route::get('index', function () {
     return view('index');
@@ -23,6 +27,7 @@ Route::get('index', function () {
 Route::get('about', "PagesController@showAbout");
 
 Route::get('contactUs',"PagesController@showContact");
+
 
 
 // Route::get('cart', function () {
@@ -114,6 +119,9 @@ Route::get('logout',"LoginController@logout");
 
 Route::get('cart', "CartController@showCart");
 Route::post('cartItems', "CartController@addItem");
+Route::get('removeItem/{id}', "CartController@removeItem");
+Route::post('orders',"CartController@checkout");
+
 
 
 Route::post('contactUs',function(\App\Http\Requests\ContactFormRequest $request){
