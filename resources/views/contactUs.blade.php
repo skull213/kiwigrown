@@ -26,7 +26,7 @@
 				<link href="{{asset('css/kube.css')}}"  type="text/css" rel="stylesheet">
 				<div class="form">
 				<h1>contact us</h1>
-					{!!Form::open(array('url'=>'contactUs',"class" => "forms", "method" => "post"))!!}
+					{!!Form::open(array('url'=>'contactUs',"class" => "forms"))!!}
 					    <row>
 					        <column cols="6">
 					            {!!Form::label('firstname','First Name')!!}
@@ -64,12 +64,13 @@
 					        </column>
 					    </row>
 					    <section>
-					    		{!!Form::label('message','Message:')!!}
-					            {!!Form::textarea('message','')!!}
-					             {!! $errors->first('message','<p class="error">:message</p>') !!}
+					    		{!!Form::label('content','Message:')!!}
+					            {!!Form::textarea('content','')!!}
+					            {!! $errors->first('content','<p class="error">:message</p>') !!}
 					    </section>
 				    	<input type="submit" class="btn" outline value="Send" />	
-				</form>
+				    	{{ Session::get("message_success") }}
+					{!! Form::close() !!}
 			</div>
 		</div>
 @endsection	

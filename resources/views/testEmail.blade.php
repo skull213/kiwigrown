@@ -7,13 +7,12 @@
     <body>
         
         <h1>CONTACT REQUEST</h1>
-        Form - {{$firstName}} {{$lastName}} 
+        Form - {{$firstname}} {{$lastname}} 
         Telephone - {{$telephone}} 
         Cellphone - {{$cellphone}} 
         Company - {{$company}} 
-        Address - {{$address}}
         Email - {{$email}}
-        Message - {{$message}}
+        Message - {{$content}}
 
 
     </body>

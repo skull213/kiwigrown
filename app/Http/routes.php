@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('orderForm', function () {
     return view('orderForm');
@@ -127,12 +127,12 @@ Route::post('orders',"CartController@checkout");
 Route::post('contactUs',function(\App\Http\Requests\ContactFormRequest $request){
     $data = \Request::all();
 
-    Mail::send('testEmail', $data, function($massage) use ($data){
+    Mail::send('testEmail', $data, function($message) use ($data){
 
-        $massage->to ('mirompm@gmail.com')->form($data['email'])->subject('KiwiGrown');
+        $message->to ('mirompm@gmail.com')->from($data['email'])->subject('KiwiGrown');
     });
 
-    return redirect('contactUs')->with("massage_succes","Thank you");
+    return redirect('contactUs')->with("message_success","Thank you");
 });
 
 

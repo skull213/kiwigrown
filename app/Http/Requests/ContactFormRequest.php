@@ -30,7 +30,7 @@ class ContactFormRequest extends Request
             "cellphone" => "required",
             "company" => "required",
             "email" => "required",
-            "message" => "required"
+            "content" => "required"
 
 
 

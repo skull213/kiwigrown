@@ -39,6 +39,13 @@
     position: relative;
     top: -0.5em; }
 
+.productdetailbox .fig, .productdetailbox .main {
+  height: 300px; }
+
+.productdetailbox .fig img {
+  width: 100%;
+  max-height: 300px; }
+
 .container .productdetailbox {
   width: 80%; }
   .container .productdetailbox .fig, .container .productdetailbox .main {
