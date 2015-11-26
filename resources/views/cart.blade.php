@@ -34,6 +34,7 @@
     <td class="name"><strong>item</strong><br>{{$item->name}}</td>
     <td class="price"><strong>price</strong><br>${{$item->price}}</td>
     <td class="amount">quantity<br>{{$item->quantity}}</td>
+     <td class="amount">size<br>{{$item->size}}</td>
     <td class="pricesubtotal"></td>
     <td class="remove"><div><a href="{{url('removeItem/'.$item->identifier)}}"><i class="fa fa-times"></i></a></div></td>
   </tr>

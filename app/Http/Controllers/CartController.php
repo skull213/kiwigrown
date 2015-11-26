@@ -36,6 +36,9 @@ class CartController extends Controller
     	$item["size"] = $request->get("size");
         $item["photo"] = $product->photo;
 
+        $item["product_id"] = $item["id"];
+        $item["id"] .= $request->get("size");
+        
 
     	Cart::insert($item);
 
@@ -56,16 +59,19 @@ class CartController extends Controller
     }
 
 
-    public function checkout(){
+     public function checkout(\App\Http\Requests\OrderFormRequest $request){
 
          $data = \Request::all();
 
-         Mail::send('orderemail', $data, function ($m)  {
+         $data["items"] = \Cart::contents();
+
+         \Mail::send('orderemail', $data, function ($m)  {
                 $m->from('hello@app.com', 'Your Application');
 
-                $m->to("miro@gmail.com", "Admin")->subject('Your Reminder!');
+                $m->to("mirompm@gmail.com", "Admin")->subject('Your Reminder!');
         });
 
+        Cart::destroy();
         return redirect("cart");
     }
 

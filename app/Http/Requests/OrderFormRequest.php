@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
-class OrderRequest extends Request
+class OrderFormRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -31,7 +31,7 @@ class OrderRequest extends Request
             "cellphone" => "required",
             "company" => "required",
             "email" => "required",
-            "message" => "required"
+            "content" => "required",
             "address" => "required"
         ];
     }

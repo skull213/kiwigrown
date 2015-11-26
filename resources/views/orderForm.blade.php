@@ -70,9 +70,9 @@
 					        </column> 
 					    </row>
 					    <section>
-					    		{!!Form::label('message','Message:')!!}
-					            {!!Form::textarea('message','')!!}
-					             {!! $errors->first('message','<p class="error">:message</p>') !!}
+					    		{!!Form::label('content','Message:')!!}
+					            {!!Form::textarea('content','')!!}
+					             {!! $errors->first('content','<p class="error">:message</p>') !!}
 					    </section>
 				    	<input type="submit" class="btn" outline value="Send" />	
 				</form>

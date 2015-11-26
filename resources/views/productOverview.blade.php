@@ -45,18 +45,8 @@
 
 						{!!Form::label("size","size")!!}
 
-						<?php
-
-							$temp_sizes = explode(",",$product->sizes);
-
-							$sizes = [];
-
-							foreach($temp_sizes  as $size){
-								$sizes[$size] = $size;
-							}
-						?>
-						{!!Form::select('size',$sizes,null,['placeholder' => ''])!!}
-
+						{!!Form::select('size', array('L' => 'Large', 'S' => 'Small'), 'S')!!}
+						
 						{!!Form::label("quantity","quantity")!!}
 						{!!Form::select("quantity",[1=>1,2=>2,3=>3,4=>4])!!}
 

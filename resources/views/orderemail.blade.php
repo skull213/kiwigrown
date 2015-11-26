@@ -7,14 +7,26 @@
     <body>
         
 
-        Form - {{$firstName}} {{$lastName}} 
-        Telephone - {{$telephone}} 
-        Cellphone - {{$cellphone}} 
-        Company - {{$company}} 
-        Address - {{$address}}
-        Email - {{$email}}
-        Message - {{$message}}
-        Address - {{$address}}
+        Form - {{$firstname}} {{$lastname}}<br> 
+        Telephone - {{$telephone}}<br> 
+        Cellphone - {{$cellphone}} <br> 
+        Company - {{$company}} <br> 
+        Address - {{$address}}<br> 
+        Email - {{$email}}<br> 
+        Message - bla
+        Address - {{$address}}<br>
+
+        <ul>
+            @foreach($items as $item)
+                <li>Name:{{$item->name}}</li>
+                <li>Price:{{$item->price}}</li>
+                <li>Quantity:{{$item->quantity}}</li>
+                <li>Size:{{$item->size}}</li>
+            @endforeach
+        </ul>
+ 
+
+        
    
 
 
