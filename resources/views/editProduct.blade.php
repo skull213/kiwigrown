@@ -41,16 +41,12 @@
 					{!!Form::text('price')!!}
 					{!!$errors->first('price','<p class="error">:message</p>')!!}
 
-					{!!Form::label('photo', 'Photo')!!}
-					{!!Form::file('photo')!!}
-
-					{!!Form::select('size', array('L' => 'Large', 'S' => 'Small','M' => 'Medium'), 'S')!!}
-
+					
 					{!!Form::label('category_id', 'Product Type')!!}
 					{!!Form::select('category_id',\App\Models\Category::lists("name","id"))!!}
 					
 					
-					<input  type="submit" value="Send">	
+					<input  type="submit" class="btn" outline value="Update">	
 			{!! Form::close() !!}	
 		</div>
 			</div>	

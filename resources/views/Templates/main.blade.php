@@ -18,6 +18,7 @@
 
 	<header>
 		<div class="top-line">
+			<a href="{{url('login')}}"><i class="fa fa-sign-in"></i></a>
 		</div>
 		<input type="checkbox" id="xBxHack" />
 		<nav id="mainNav" class="mainNav">
@@ -49,6 +50,7 @@
 					<li><a href="{{url('contactUs')}}">Contact Us</a></li>
 					@if(Auth::check())
 					<li><a href="{{url('logout')}}">Log out</a></li>
+					<li><a href="{{url('products/create')}}">New Product</a></li>
 					@endif
 					<li><a href="{{url('cart')}}"><i class="fa fa-shopping-cart"></i><span> 1</span></a></li>
 				</ul>
@@ -81,6 +83,7 @@
 	</div>
 </footer>
 
+<div style="display:none;" id="admin">{{\Auth::check()}}</div>>
 <div style="display:none;" id="token">{{ csrf_token() }}</div>
 
 

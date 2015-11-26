@@ -286,43 +286,27 @@ function initMap() {
 }
 
 //--------------------------------------------------------------->>
-// $(function()){
-
-
-// $("[data-field]").on("click",function(i,el){
-
-//         var url = window.location.href + "/" + $(el).attr("data-postid");
-//         var options = {
-//             type:"textarea",
-//             cssclass:"editable",
-//             submitdata:{
-//                 _method:"PUT",
-//                 _token:$("#token").text(),
-//                 field: $(this).attr("data-field")
-//             },
-//             submit: "OK"
-//         };
-//         $(el).editable(url,options);
-//     });
-// };
 
 $(function(){
 
+    if ($("#admin").text() == "1") {
+        $("[data-field]").each(function(i,el){
 
-    $("[data-field]").each(function(i,el){
-
-        var url = 'posts/' +  $(el).attr("data-postid");
-        var options = {
-            type:"textarea",
-            submitdata:{
-                _method:"PUT",
-                _token:$("#token").text(),
-                field: $(el).attr("data-field")
-            },
-            submit: "OK"
-        };
-        console.log(options);
-        $(el).editable(url,options);
-    });
-
+            var url = 'posts/' +  $(el).attr("data-postid");
+            var options = {
+                type:"textarea",
+                submitdata:{
+                    _method:"PUT",
+                    _token:$("#token").text(),
+                    field: $(el).attr("data-field")
+                },
+                submit: "OK"
+            };
+            console.log(options);
+            $(el).editable(url,options);
+        });
+    };
 });
+
+
+

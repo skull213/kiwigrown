@@ -25,7 +25,10 @@ class CreateProductRequest extends Request
     public function rules()
     {
         return [
-            //
+            "name"=>"required",
+            "description"=>"required",
+            "price"=>"required",
+            "photo"=>"required"
         ];
     }
 }

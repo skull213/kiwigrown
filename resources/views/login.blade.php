@@ -30,10 +30,12 @@
 					<column cols="6">
 					{!!Form::label('username', 'User Name')!!}
 					{!!Form::text('username')!!}
+					{!! $errors->first('username','<p class="error">:message</p>') !!}
 					</column>
 					<column cols="6">
 					{!!Form::label('password', 'Password')!!}
 					{!!Form::password('password')!!}
+					{!! $errors->first('password','<p class="error">:message</p>') !!}
 					</column>
 				</row>	
 

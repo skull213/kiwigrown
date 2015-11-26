@@ -29,10 +29,11 @@
 					<column cols="6">
 					{!!Form::label('name', 'Product name')!!}
 					{!!Form::text('name')!!}
+					{!!$errors->first('name','<p class="error">:message</p>')!!}
 					</column>
 				</row>	
 
-					{!!$errors->first('name','<p class="error">:message</p>')!!}
+					
 					
 					{!!Form::label('description', 'description')!!}
 					{!!Form::textarea('description')!!}
@@ -44,14 +45,15 @@
 
 					{!!Form::label('photo', 'Photo')!!}
 					{!!Form::file('photo')!!}
+					{!!$errors->first('photo','<p class="error">:message</p>')!!}
 
-					{!!Form::select('size', array('L' => 'Large', 'S' => 'Small','M' => 'Medium'), 'S')!!}
 
 					{!!Form::label('category_id', 'Product Type')!!}
 					{!!Form::select('category_id',\App\Models\Category::lists("name","id"))!!}
 					
 					
-					<input type="submit" class="btn" outline value="update" />	
+					
+					<input type="submit" class="btn" outline value="create" />	
 			{!! Form::close() !!}	
 		</div>
 			</div>	
