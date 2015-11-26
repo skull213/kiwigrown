@@ -5,11 +5,11 @@
 	
 	<section class="section1">
 			<div class="contact-heading">
-				<h1>Contact Us</h1>
+				{{-- <h1>Contact Us</h1> --}}
 			</div>
 			<div class="sub-nav"></div>
 		</section>
-		<hr class="my_title" />
+		<h3 class="products-heading">News and Events</h3>
 		<div class="products">
 			<div class="productWrap">
 				<?php $products = $category->products()->paginate(8);
@@ -26,7 +26,6 @@
 			            <span><a href="{{url('products/'.$product->id)}}">Add to Cart</a></span>
 			          </div>
 			          <div class="details">
-			            <img src="http://atakan.work/ea/img/eye.png" height="10" width="19" alt="">
 			            <span>${{$product->price}}</span>
 			          </div>
 			        </div>

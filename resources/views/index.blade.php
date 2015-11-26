@@ -1,11 +1,11 @@
-@extends('templates.main')
+ @extends('templates.main')
 
 @section('content')	
 		<section>
 			<div class="flicker-example">
 				<ul>
 					<li data-background="img/pic7.jpg">
-						<div class="flick-title">Lorem</div>
+						<div class="flick-title">Range of affordable, high quality, NZ made garments</div>
 						<div class="flick-sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, voluptatum neque, perferendis repellat quasi ipsum consequuntur ut sed dolorum natus a. Corporis consequatur quo modi, quia quidem nihil. Voluptatibus, beatae.</div>
 					</li>
 						
@@ -58,14 +58,14 @@
 					<div class="product">
 				      <img src="{{asset('img/'.$products->photo)}}" class="p-img" draggable="false" alt="">
 				      <h1>{{$products->name}}</h1>
-				        <span class="price">{{$products->price}}</span>
+				        <span class="price"></span>
 				        <div class="buy">
 				          <div class="cart">
 				            <img src="http://atakan.work/ea/img/shcart.png" height="17" width="19" alt="">
 				            <span><a href="{{url('products/'.$products->id)}}">Add to Cart</a></span>
 				          </div>
 				          <div class="details">
-					
+								${{$products->price}}
 				          </div>
 				        </div>
 					</div>
@@ -81,14 +81,14 @@
 					<div class="product">
 				      <img src="{{asset('img/'.$product->photo)}}" class="p-img" draggable="false" alt="">
 				      <h1>{{$product->name}}</h1>
-				        <span class="price">{{$product->price}}</span>
+				        <span class="price"></span>
 				        <div class="buy">
 				          <div class="cart">
 				            <img src="http://atakan.work/ea/img/shcart.png" height="17" width="19" alt="">
 				            <span><a href="{{url('products/'.$product->id)}}">Add to Cart</a></span>
 				          </div>
 				          <div class="details">
-					
+							${{$product->price}}
 				          </div>
 				        </div>
 					</div>
@@ -99,7 +99,7 @@
 		<section>
 				<div class="info">
 					<div class="photo">
-						<img src="img/pic21.jpg" alt="">
+						<img src="img/shirt.jpg" alt="">
 					</div>
 					<div class="info-wrap">
 						<div>
@@ -126,7 +126,7 @@
 			@foreach(\App\Models\Post::all() as $post)
 			<div class="blog-wrapper">
 				<div class="blog-card">
-					<div class="card-img"><img src="img/pic33.jpg" alt="">
+					<div class="card-img"><img src="{{asset('img/'.$post->photo)}}" alt="">
 						<h1 data-field="title" data-postid="{{$post->id}}">{{$post->title}}</h1>
 					</div>
 					<div class="card-details"><span><i class="fa fa-calendar"></i>{{$post->created_at}}</span><span><i class="fa fa-heart"></i>102</span></div>
@@ -134,22 +134,6 @@
 					<div class="read-more">Read More</div>
 				</div>
 			@endforeach
-				{{-- <div class="blog-card">
-					<div class="card-img"><img src="img/ccc.jpg" alt="">
-						<h1>San Francisco</h1>
-					</div>
-					<div class="card-details"><span><i class="fa fa-calendar"></i>AUG 1</span><span><i class="fa fa-heart"></i>265</span></div>
-					<div class="card-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si verbum sequimur, primum longius verbum praepositum quam bonum.</p></div>
-					<div class="read-more">Read More</div>
-				</div> --}}
-				{{-- <div class="blog-card" id="hide">
-					<div class="card-img"><img src="img/pic34.jpg" alt="">
-						<h1>San Francisco</h1>
-					</div>
-					<div class="card-details"><span><i class="fa fa-calendar"></i>AUG 1</span><span><i class="fa fa-heart"></i>265</span></div>
-					<div class="card-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si verbum sequimur, primum longius verbum praepositum quam bonum.</p></div>
-					<div class="read-more">Read More</div>
-				</div> --}}
 			</div>
 		</section>		
 @endsection		

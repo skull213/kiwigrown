@@ -1,16 +1,14 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 @if(Request::ajax() == false)
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Kiwi Grown quality ready-made clothing blanks, Made in Mew Zealand</title>
 	<link rel="stylesheet" type="text/css" href="{{asset('css/styles.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('css/custom.css')}}">
-	{{-- <link href="{{asset('css/kube.css')}}"  type="text/css" rel="stylesheet"> --}} {{-- the font problem --}}
 	<link href="css/flickerplate.css"  type="text/css" rel="stylesheet">
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	{{-- <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-schemes.min.css"> --}}
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed|Lato' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>

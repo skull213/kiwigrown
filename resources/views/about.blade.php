@@ -5,7 +5,6 @@
 
 	<section class="section1">
 			<div class="contact-heading">
-				<h1>About Us</h1>
 			</div>
 			<div class="sub-nav"></div>
 		</section>

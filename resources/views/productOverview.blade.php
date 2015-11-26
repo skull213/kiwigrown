@@ -4,7 +4,7 @@
 @section('content')	
 	<section class="section1">
 			<div class="contact-heading">
-				<h1>Contact Us</h1>
+				{{-- <h1>Contact Us</h1> --}}
 			</div>
 			<div class="sub-nav"></div>
 			
@@ -45,7 +45,7 @@
 
 						{!!Form::label("size","size")!!}
 
-						{!!Form::select('size', array('L' => 'Large', 'S' => 'Small'), 'S')!!}
+						{!!Form::select('size', array('L' => 'Large', 'S' => 'Small','M' => 'Medium'), 'S')!!}
 						
 						{!!Form::label("quantity","quantity")!!}
 						{!!Form::select("quantity",[1=>1,2=>2,3=>3,4=>4])!!}

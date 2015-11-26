@@ -3,7 +3,7 @@
 
 		<section class="section1">
 			<div class="contact-heading">
-				<h1>Contact Us</h1>
+				{{-- <h1>Contact Us</h1> --}}
 			</div>
 			<div class="sub-nav"></div>
 		</section>
