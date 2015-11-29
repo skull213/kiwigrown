@@ -131,7 +131,7 @@
 					</div>
 					<div class="card-details"><span><i class="fa fa-calendar"></i>{{$post->created_at}}</span><span><i class="fa fa-heart"></i>102</span></div>
 					<div class="card-text"><p data-field="content" data-postid="{{$post->id}}">{{$post->content}}</p></div>
-					<div class="read-more">Read More</div>
+					<div class="read-more"><i class="fa fa-thumbs-o-up fa fa-3x"></i></div>
 				</div>
 			@endforeach
 			</div>

@@ -22,7 +22,8 @@
 				</div>
 
 		<link href="{{asset('css/kube.css')}}"  type="text/css" rel="stylesheet">
-
+			<div class="form">
+				<h1>cart</h1>
 		{!! Form::open(array('url' => 'products','files'=>"true", "class" => "forms")) !!}  
 				
 				<row>

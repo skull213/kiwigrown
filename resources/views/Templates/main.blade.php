@@ -28,16 +28,16 @@
 					<i class="fa fa-bars"></i>
 				</label>
 				<ul id="menu" class="menu">
-					<li><a href="{{url('index')}}">Home</a></li>
+					<li class="hvr-underline-reveal"><a href="{{url('index')}}">Home</a></li>
 					<li>
 					<div class="pure-menu pure-menu-horizontal">
 					    <ul class="pure-menu-list">
-					        <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					        <li  class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
 					            <a href="#" id="menuLink1" class="pure-menu-link">Shop</a>
 					            <ul class="pure-menu-children">
 
 					            @foreach(\App\Models\Category::all() as $category)
-					                <li class="pure-menu-item"><a href="{{url('categories/'.$category->id)}}" class="pure-menu-link">{{$category->name}}</a></li>
+					                <li class="hvr-underline-reveal" class="pure-menu-item"><a href="{{url('categories/'.$category->id)}}" class="pure-menu-link">{{$category->name}}</a></li>
 					            @endforeach
 					                {{-- <li class="pure-menu-item"><a href="#" class="pure-menu-link">Children</a></li>
 					                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Adults</a></li> --}}
@@ -46,13 +46,13 @@
 					    </ul>
 					</div>
 					</li>
-					<li><a href="{{url('about')}}">About Us</a></li>
-					<li><a href="{{url('contactUs')}}">Contact Us</a></li>
+					<li class="hvr-underline-reveal"><a href="{{url('about')}}">About Us</a></li>
+					<li class="hvr-underline-reveal"><a href="{{url('contactUs')}}">Contact Us</a></li>
 					@if(Auth::check())
-					<li><a href="{{url('logout')}}">Log out</a></li>
-					<li><a href="{{url('products/create')}}">New Product</a></li>
+					<li class="hvr-underline-reveal"><a href="{{url('logout')}}">Log out</a></li>
+					<li class="hvr-underline-reveal"><a href="{{url('products/create')}}">New Product</a></li>
 					@endif
-					<li><a href="{{url('cart')}}"><i class="fa fa-shopping-cart"></i><span> 1</span></a></li>
+					<li class="hvr-underline-reveal"><a href="{{url('cart')}}"><i class="fa fa-shopping-cart"></i><span> 1</span></a></li>
 				</ul>
 			</div>
 		</nav>
@@ -83,7 +83,7 @@
 	</div>
 </footer>
 
-<div style="display:none;" id="admin">{{\Auth::check()}}</div>>
+<div style="display:none;" id="admin">{{\Auth::check()}}</div>
 <div style="display:none;" id="token">{{ csrf_token() }}</div>
 
 
