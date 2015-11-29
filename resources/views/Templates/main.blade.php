@@ -3,6 +3,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="description" content="Quality NZ made baby,children and adult garments (blanks) for creative people to rebrand and add their own flair to.">
+	<meta name="keywords" content="New Zealand,NZ,baby,children,adult,garments,blanks,creative,people,rebrand">
 	<title>Kiwi Grown quality ready-made clothing blanks, Made in Mew Zealand</title>
 	<link rel="stylesheet" type="text/css" href="{{asset('css/styles.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('css/custom.css')}}">
@@ -39,8 +41,7 @@
 					            @foreach(\App\Models\Category::all() as $category)
 					                <li class="hvr-underline-reveal" class="pure-menu-item"><a href="{{url('categories/'.$category->id)}}" class="pure-menu-link">{{$category->name}}</a></li>
 					            @endforeach
-					                {{-- <li class="pure-menu-item"><a href="#" class="pure-menu-link">Children</a></li>
-					                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Adults</a></li> --}}
+
 					            </ul>
 					        </li>
 					    </ul>

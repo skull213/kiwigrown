@@ -1,4 +1,4 @@
- @extends('templates.main')
+@extends('templates.main')
 
 @section('content')	
 		<section>
@@ -41,8 +41,9 @@
 				<div class="text">
 					<h2 class="heading">About Us</h2>
 					<p>
-					<span>Ipsum itaque optio, deserunt perferendis. Sed sunt hic obcaecati quos fugit rem quas architecto, voluptas repudiandae cum dolor totam itaque cupiditate tenetur, omnis! Qui consequuntur libero tenetur labore explicabo enim.</span></p>
-					<p><span>Quis laborum officiis atque asperiores sint aliquid non, assumenda iste veniam alias consectetur repudiandae, explicabo debitis. Ex, dicta, natus. Sint quam unde quaerat provident id architecto maiore</span>
+					<span>Kiwi Grown is a range of affordable, high quality, NZ made garments (blaks) for creative people like you to rebrand and personalize by adding your own design elements. Some customization is also possible.
+					</span></p>
+					<p><span>Whether its screen printing, embrodery or applique you want to add, our product is perfect for you.Expand your existing clothing range by adding some plain or printet Kiwi Grown options or design a wholw new range around our quality garments. Either way, it's a no brainer for you.</span>
 					</p>
 				</div>
 			</div>		
@@ -103,20 +104,20 @@
 					</div>
 					<div class="info-wrap">
 						<div>
-							<h4>latest</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magnam quibusdam eligendi amet dolores quos molestias aperiam</p>
+							<h4>Made in New Zealand</h4>
+							<p>The garments are designed and made in our own factory in Auckland, <a href="www.stichperfect.co.nz">Stitch Perfect</a>, We eliminate manufacturing challenges for you while still allowing you to produce your own quality clothing label in New Zealand. Of course, Stitch Perfect can also produce your own designs for you so <a href="">contact us</a> now. And by using NZ made garmentsm you are adding value to your own brand as well as supporting the local economy.
 						</div>
 						<div>
-							<h4>latest</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur itaque delectus autem, deleniti, possimus ex illo repellat</p>
+							<h4>Our Product</h4>
+							<p>Kiwi Grown garments are indended as a blank canvas for you to do your own thing on. They are designed with comfort, practicality & affordability in mind, and come in baby and junior sizes from new born up to 5 years old. Some children and adult sizes in limited styles are also available and more are on thir way. Althougn usually made to order to your individual requirements, there is a limited qunatity of ready-made garments in stock now at clearance prices. You ma re-brang these garments with your own label and we offer a re-labeling service.</p>
 						</div>
 						<div>
-							<h4>latest</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque cupiditate nobis illum numquam! Dolorem totam perspiciatis</p>
+							<h4>Personalise our product with your own design</h4>
+							<p>Althougn Kiwi Grown garments are great worn as the are as basic wardrobe essentials, they are ideal for designers and other creative people like you to add your own flair to by screen printing, embroidering, appliqueing, adding buttons or bows or embellishing in some other way. Re-brand with your own label or leave ours on; it's up to you.</p>
 						</div>
 						<div>
-							<h4>latest</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, dolore nobis, ratione repellendus consectetur, mollitia maxime quos fugit cumque a odi</p>
+							<h4>Customise our product to suit your needs</h4>
+							<p>Because these garmnets are made to order, we can also cater for some customisation, such as using a contrast colour binding or thread, or adding your won side pips in production. Your own brand labels can be attached grom the outset, saving you the relabeling charge later. Or we could provide you with the cut pieces to be screen printed before manufactoring commences if that is what you want. For a really individual look, we can even use our patterns on other suitable fabric that you supply, such as organic  and merino fabrics. A small additional charge may apply to some customisations, depending on what they are. <a href="">Contact us</a> for customisation options and pricing.</p>
 						</div>
 					</div>
 				</div>		

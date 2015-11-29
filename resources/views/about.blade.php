@@ -21,9 +21,9 @@
 					<h2 class="heading">About Us</h2>
 					<p>
 					<span>Ipsum itaque optio, deserunt perferendis. Sed sunt hic obcaecati quos fugit rem quas architecto, voluptas repudiandae cum dolor totam itaque cupiditate tenetur, omnis! Qui consequuntur libero tenetur labore explicabo enim.</span></p>
-					<p><span>Quis laborum officiis atque asperiores sint aliquid non, assumenda iste veniam alias consectetur repudiandae, explicabo debitis. Ex, dicta, natus. Sint quam unde quaerat provident id architecto maiore
+					<p><span>Quis laborum officiis atque asperiores sint aliquid non, assumenda iste veniam alias consectetur repudiandae, explicabo debitis. Ex, dicta, natus. Sint quam unde quaerat provident id architecto maiore</span>
 					</p>
 				</div>
 			</div>	
-		</div>			
+		</div>
 @endsection	
