@@ -30,56 +30,13 @@ Route::get('contactUs',"PagesController@showContact");
 
 
 
-// Route::get('cart', function () {
-//     return view('cart');
-// });
-// Route::get('about', function () {
-//     return view('about');
-// });
-
-
-// Route::get('contactUs', function () {
-//     return view('contactUs');
-// });
-
-
-// Route::get('productOverview', function () {
-//     return view('productOverview');
-// });
-
-// Route::get('products', function () {
-//     return view('products');
-// });
-
-// Route::get('makeOrder', function () {
-//     return view('makeOrder');
-// });
-
-
-
-// Route::get('products', function () {
-// 	$products=\App\Models\Product::all();
-
-//     return view('products');
-// });
-
-// Route::get('products/{id}', function ($id) {
-// 	$products=\App\Models\Product::find($id);
-
-//     return view('productOverview', ['product'=>$products]);
-// });
-
 Route::get('categories/{id}', function($id){
 	$category=\App\Models\Category::find($id);
 
 	return view("products",compact("category"));
 });
 
-// Route::get('posts', function(){
-// 	$posts=\App\Models\Post::all();
 
-// 	return $posts;
-// });
 
 Route::put('posts/{id}', function($id){
 	
@@ -98,17 +55,7 @@ Route::put('posts/{id}', function($id){
        
 });
 
-// Route::get('orders', function(){
-// 	$orders=\App\Models\Order::find(1);
 
-// 	return $orders;
-// });
-
-// Route::get('users', function(){
-// 	$users =\App\Models\User::all();
-
-// 	return $users;
-// });
 
 Route::get('login',"LoginController@showLoginForm");
 Route::post('login',"LoginController@processLogin");
@@ -136,25 +83,3 @@ Route::post('contactUs',function(\App\Http\Requests\ContactFormRequest $request)
 });
 
 
-// Route::post('cart/add', function(){
-
-// 	$item = $request->only("id");
-
-// 	$product = \App\Models\Product::find($item["id"]);
-
-// 	$item [] = $product->name;
-// 	$item ["price"] = $product->price;
-
-// 	$cart =  \App\Models\Cart::add($item);
-
-// 	return $cart;
-// });
-
-// Route::get('categories/{id}', function($id){
-// 	$categories =\App\Models\Category::find($id);
-
-// 	return view('products');
-// });
-
-//$type = App\Models\Type::find(2);
-	//return $type->products;
