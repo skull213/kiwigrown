@@ -52,14 +52,14 @@
 					        <column cols="6">
 					            {!!Form::label('email','Email:')!!}
 					            {!!Form::text('email','')!!}
-					            {!! $errors->first('email;','<p class="error">:message</p>') !!}
+					            {!! $errors->first('email','<p class="error">:message</p>') !!}
 					        </column>
 					    </row>    
 					    <row>    
 					        <column cols="6">
 					            {!!Form::label('address','Address:')!!}
 					            {!!Form::text('address','')!!}
-					            {!! $errors->first('address;','<p class="error">:message</p>') !!}
+					            {!! $errors->first('address','<p class="error">:message</p>') !!}
 					        </column> 
 					    </row>
 					    <section>

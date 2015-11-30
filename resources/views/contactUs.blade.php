@@ -58,7 +58,7 @@
 						        <column cols="6">
 						            {!!Form::label('email','Email:')!!}
 						            {!!Form::text('email','')!!}
-						            {!! $errors->first('email;','<p class="error">:message</p>') !!}
+						            {!! $errors->first('email','<p class="error">:message</p>') !!}
 						        </column>
 						    </row>
 						    <section>
