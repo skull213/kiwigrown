@@ -14,13 +14,7 @@
     <div class="contact-container">
         <div class="contact-details">
           <h1>Shipping <i class="fa fa-truck"></i></h1>
-          <p>possimus laboriosam. Porro et sapiente odit excepturi dolorem voluptate, voluptatum aliquid sint odio accusamus sit nostrum impedit quae, quia ullam?</p><br><br><br>
-          <ul>
-            <li><i>Adrdress: </i><address>795 South Park Avenue, Door 6 Wonderland, CA 94107, Australia</address></li>
-            <li><i>Phone: </i><em>+440 875369208</em></li><br>
-            <li><i>Email: </i><em>nfo@sitename.com</em></li><br>
-            <li><i>Fax: </i><em>nfo@sitename.com</em></li><br>
-          </ul>
+          <p>Because we are local, we can offer fast delivery of three to four weeks for these made to order garments (or just a couple of days for the limited number of stocked ones we have).</p><br><br><br>
             
         </div>
         <div class="form">
@@ -57,11 +51,7 @@
 </table>
   <div id="checkout"><a href="{{url('orderForm')}}" class="pure-button pure-button-primary">Make Order</a></div>
 <div id="footer">
-  <ul>
-    <li>Change the amount of stuff and see the subtotal and total change</li>
-    <li>Try to change the amount of items to minus amounts or 0</li>
-    <li>Delete items and see the totals change</li>
-  </ul>
+  
 </div>
 </div>
       </div>

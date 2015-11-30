@@ -342,9 +342,8 @@ section:nth-child(4) .productWrap {
         opacity: 2; }
 
 section:nth-child(5) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/pic23.jpg);
-  background-attachment: fixed;
-  background-size: cover; }
+  background-image: url(../img/tweed_@2X.png);
+  background-attachment: fixed; }
   section:nth-child(5) .photo {
     margin-left: auto;
     margin-right: auto;
@@ -359,7 +358,7 @@ section:nth-child(5) {
     section:nth-child(5) .info-wrap div {
       margin-left: auto;
       margin-right: auto;
-      height: 10em;
+      height: 18em;
       width: 95%; }
       section:nth-child(5) .info-wrap div p {
         text-align: left;
@@ -519,7 +518,6 @@ footer {
       background-color: white;
       margin-left: auto;
       margin-right: auto;
-      height: 10em;
       width: 70%; }
       main section:nth-child(5) .info-wrap div p {
         width: 70%;
@@ -627,7 +625,6 @@ footer {
         margin-left: 0em;
         margin-right: 0em;
         padding: 1em;
-        height: 10em;
         width: 17em; }
         section:nth-child(5) .info .info-wrap div p {
           width: 100%;
@@ -729,7 +726,6 @@ footer {
         background-color: white;
         margin-left: 0em;
         margin-right: 0em;
-        height: 10em;
         width: 20em;
         margin: 0.3em; }
   section:nth-child(6) #hide {
@@ -819,7 +815,6 @@ footer {
         background-color: white;
         margin-left: 0.5em;
         margin-right: 0em;
-        height: 10em;
         width: 21em; }
   section:nth-child(6) #hide {
     display: block; }

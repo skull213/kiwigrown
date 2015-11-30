@@ -211,7 +211,7 @@ function initMap() {
     }
     ];
 
-  var destination = {lat: -36.8406, lng: 174.7400};
+  var destination = {lat: -36.9147677, lng: 174.8994997};
   
   var map = new google.maps.Map(document.getElementById('map'), {
       center: destination,
@@ -227,7 +227,7 @@ function initMap() {
   });
 
   var infowindow = new google.maps.InfoWindow({
-        content: '<div id="content">Cafe</div>'
+        content: '<div id="content">Kiwigrown</div>'
     });
     infowindow.open(map, marker);
 

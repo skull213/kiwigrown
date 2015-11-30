@@ -53,7 +53,7 @@
 					<li class="hvr-underline-reveal"><a href="{{url('logout')}}">Log out</a></li>
 					<li class="hvr-underline-reveal"><a href="{{url('products/create')}}">New Product</a></li>
 					@endif
-					<li class="hvr-underline-reveal"><a href="{{url('cart')}}"><i class="fa fa-shopping-cart"></i><span> 1</span></a></li>
+					<li class="hvr-underline-reveal"><a href="{{url('cart')}}"><i class="fa fa-shopping-cart"></i></a></li>
 				</ul>
 			</div>
 		</nav>
@@ -78,7 +78,7 @@
 			</li>
 			<li>
 			    <p><i class="fa fa-envelope fa-2x"></i></p>
-			    <p><strong>E-mail:</strong><br>catcomp@catcomp.hu</p>
+			    <p><strong>E-mail:</strong><br>info@kiwigrown.co.nz</p>
 		    </li>
 		</ul>
 	</div>

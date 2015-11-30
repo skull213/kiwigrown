@@ -13,14 +13,14 @@
 		
 		<div class="contact-container">
 				<div class="contact-details">
-					<h1>Get in touch</h1>
-					<p>possimus laboriosam. Porro et sapiente odit excepturi dolorem voluptate, voluptatum aliquid sint odio accusamus sit nostrum impedit quae, quia ullam?</p><br><br><br>
-					<ul>
+					<h1>Product Range - Made</h1>
+					<p>We are flexible when it comes to what styles can be offered and the time needed to add new styles. There are a number of new styles being released shortly. Contact us to discuss your particular requirements. Minimum order of quantities of 3 garments per style apply.</p><br><br><br>
+					{{-- <ul>
 						<li><i>Adrdress: </i><address>795 South Park Avenue, Door 6 Wonderland, CA 94107, Australia</address></li>
 						<li><i>Phone: </i><em>+440 875369208</em></li><br>
 						<li><i>Email: </i><em>nfo@sitename.com</em></li><br>
 						<li><i>Fax: </i><em>nfo@sitename.com</em></li><br>
-					</ul>
+					</ul> --}}
 						
 				</div>
 				<div class="form">

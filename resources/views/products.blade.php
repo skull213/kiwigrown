@@ -4,17 +4,13 @@
 @section('content')	
 	
 	<section class="section1">
-			<div class="contact-heading">
-				{{-- <h1>Contact Us</h1> --}}
-			</div>
+			<div class="contact-heading"></div>
 			<div class="sub-nav"></div>
 		</section>
-		<h3 class="products-heading">News and Events</h3>
+		<h3 class="products-heading"></h3>
 		<div class="products">
 			<div class="productWrap">
-				<?php $products = $category->products()->paginate(8);
-					$products->setPath("");
-				  ?>	
+				
 				@foreach($category->products as $product)
 				<div class="product">
 			      <img src="{{asset('img/'.$product->photo)}}" class="p-img" draggable="false">
@@ -46,7 +42,7 @@
 			        @endif
 				</div>
 				@endforeach
-				{!! $products->render() !!}
+				
 			</div>
 
 		</div>	

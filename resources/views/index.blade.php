@@ -6,22 +6,22 @@
 				<ul>
 					<li data-background="img/pic7.jpg">
 						<div class="flick-title">Range of affordable, high quality, NZ made garments</div>
-						<div class="flick-sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, voluptatum neque, perferendis repellat quasi ipsum consequuntur ut sed dolorum natus a. Corporis consequatur quo modi, quia quidem nihil. Voluptatibus, beatae.</div>
+						<div class="flick-sub-text">Althougn Kiwi Grown garments are great worn as the are as basic wardrobe essentials, they are ideal for designers and other creative people like you to add your own flair to by screen printing, embroidering, appliqueing</div>
 					</li>
 						
 					<li data-background="img/pic20.jpg">
-						<div class="flick-title">lorem</div>
-						<div class="flick-sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quas enim doloribus quam iusto. Eos reiciendis tempore, impedit voluptas libero velit. Totam voluptatem in vitae nemo cupiditate autem atque voluptates.</div>
+						<div class="flick-title">Made in New Zealand</div>
+						<div class="flick-sub-text">The garments are designed and made in our own factory in Auckland, Stitch Perfect, We eliminate manufacturing challenges for you while still allowing you to produce your own quality clothing label in New Zealand.</div>
 					</li>
 						
 					<li data-background="img/pic23.jpg">
-						<div class="flick-title">Touch Enabled Through the Hammer.js Library</div>
-						<div class="flick-sub-text"><a href="http://hammerjs.github.io/">Hammer.js</a> is a great touch library that has been included as part of the Flickerplate package.</div>
+						<div class="flick-title">Our Product</div>
+						<div class="flick-sub-text">Kiwi Grown garments are indended as a blank canvas for you to do your own thing on</div>
 					</li>
 
 					<li data-background="img/pic4.jpg">
-						<div class="flick-title">Fabric and Trims</div>
-						<div class="flick-sub-text"><a href="http://hammerjs.github.io/"></a>Made from high quality fabric 93% cotton and 7% spandex and it comes in around 50 versatile colours. The clothes are hardwearing, feel lovely and soft and retain their shape</div>
+						<div class="flick-title">Customise our product to suit your needs</div>
+						<div class="flick-sub-text">Because these garmnets are made to order, we can also cater for some customisation, such as using a contrast colour binding or thread, or adding your won side pips in production. Your own brand labels can be attached grom the outset, saving you the relabeling charge later. </div>
 					</li>
 						
 				</ul>	
@@ -117,7 +117,7 @@
 						</div>
 						<div>
 							<h4>Customise our product to suit your needs</h4>
-							<p>Because these garmnets are made to order, we can also cater for some customisation, such as using a contrast colour binding or thread, or adding your won side pips in production. Your own brand labels can be attached grom the outset, saving you the relabeling charge later. Or we could provide you with the cut pieces to be screen printed before manufactoring commences if that is what you want. For a really individual look, we can even use our patterns on other suitable fabric that you supply, such as organic  and merino fabrics. A small additional charge may apply to some customisations, depending on what they are. <a href="">Contact us</a> for customisation options and pricing.</p>
+							<p>Because these garmnets are made to order, we can also cater for some customisation, such as using a contrast colour binding or thread, or adding your won side pips in production. Your own brand labels can be attached grom the outset, saving you the relabeling charge later. Or we could provide you with the cut pieces to be screen printed before manufactoring commences if that is what you want. For a really individual look, we can even use our patterns on other suitable fabric that you supply, such as organic  and merino fabrics.</p>
 						</div>
 					</div>
 				</div>		
