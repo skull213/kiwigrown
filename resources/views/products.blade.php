@@ -5,7 +5,7 @@
 	
 	<section class="section1">
 			<div class="contact-heading"></div>
-			<div class="sub-nav"></div>
+			<div style=" background-color:#EFEFEF;" class="sub-nav"></div>
 		</section>
 		<h3 class="products-heading"></h3>
 		<div class="products">
@@ -46,5 +46,5 @@
 			</div>
 
 		</div>	
-
+	<div style="height:10em;"></div>
 @endsection

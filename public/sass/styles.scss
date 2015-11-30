@@ -2,6 +2,7 @@
 // 	outline: 1px solid red;
 // }
 
+
 /* Variables */
 //================================================
 $bg: #fff;
@@ -74,8 +75,8 @@ $silver:#aaaaaa;
     height: 300px;
   }
   .fig img{
-    width: 100%;
-    max-height: 300px;
+    width: 250px;
+    max-height: 250px;
   }
 }
 // //====================================================>>
@@ -159,6 +160,7 @@ $silver:#aaaaaa;
 			a {
 				color: $dark;
 				border-bottom: 1px solid ($light / 1.1);
+				//font-weight: bold;
 				display: block;
 				padding: 15px;
 
@@ -461,7 +463,6 @@ $silver:#aaaaaa;
 	
 
 	section:nth-child(5){
-	background-image:url(../img/tweed_@2X.png);
 	background-attachment: fixed;
 
 		.photo{
@@ -471,7 +472,7 @@ $silver:#aaaaaa;
 			}
 			margin-left: auto;
 			margin-right: auto;
-			height: 10em;
+			height: 18em;
 			width: 95%;
 		}
 		.info-wrap{
@@ -480,7 +481,7 @@ $silver:#aaaaaa;
 			div{
 				margin-left: auto;
 				margin-right: auto;
-				height: 18em;
+				height: 17em;
 				width: 95%;
 				p{
 				text-align: left;
@@ -636,31 +637,17 @@ $silver:#aaaaaa;
 //footer//========================================>
 	footer{
 		background-color: black;
-		.contact .fa:before {
-			display: inline-block;
-		}
-		.contact li {
-  			display: inline-block; 
- 			list-style-type: none;
-  			margin: 0 1.7em;
-  			text-align: center;
-		}
-		.contact p {
+		height:3em;
+		
+		.cont p {
 			text-align: center;
-			font-size: 0.8em;
+			font-size: 1em;
 			font-family: $ff;
 			color: $silver;
 			i{
 				color:white;
+				font-size:1em;
 			}
-		}
-		.contact {
-			display: inline-block; margin: 0 auto;
-			padding-left: 0;
-		}
-		.cont {
-			text-align: center;
-			margin-top:3em;
 		}
 	}
 
@@ -703,7 +690,7 @@ $silver:#aaaaaa;
 					background-color: white;
 					margin-left: auto;
 					margin-right: auto;
-					//height: 10em;
+					height: 10em;
 					width: 70%;
 					p{
 					width: 70%;
@@ -870,7 +857,7 @@ $silver:#aaaaaa;
 			.photo{
 				margin-left: auto;
 				margin-right: auto;
-				height: 15em;
+				height: 17em;
 				width: 20em;
 
 			}
@@ -889,7 +876,7 @@ $silver:#aaaaaa;
 					margin-left: 0em;
 					margin-right: 0em;
 					padding: 1em;
-					//height: 10em;
+					height: 10em;
 					width: 17em;
 					p{
 					width: 100%;
@@ -1040,6 +1027,7 @@ $silver:#aaaaaa;
 	}
 
 	section:nth-child(5){
+			background-image: url(../img/tweed_@2X.png);
 			.info{
 				display: flex;
 				flex-direction: row;
@@ -1061,7 +1049,7 @@ $silver:#aaaaaa;
 					background-color: white;
 					margin-left: 0em;
 					margin-right: 0em;
-					//height: 10em;
+					height: 17em;
 					width: 20em;
 					margin: 0.3em;
 				}
@@ -1215,7 +1203,7 @@ $silver:#aaaaaa;
 					background-color: white;
 					margin-left: 0.5em;
 					margin-right: 0em;
-					//height: 10em;
+					height: 17em;
 					width: 21em;
 				}
 			} 

@@ -65,22 +65,10 @@
 @if(Request::ajax() == false)
 
 	</main>
+
 	<footer>
 	<div class="cont">
-		<ul class="contact">
-			<li>
-			    <p><i class="fa fa-map-marker fa-2x"></i></p>
-			    <p><strong>Auckland</strong><br>1/54, Ben Lomond Crescent</p>
-			</li>
-			<li>
-			    <p><i class="fa fa-phone fa-2x"></i></p>
-			    <p><strong>Ph:</strong><br>09 576 7076,</p>
-			</li>
-			<li>
-			    <p><i class="fa fa-envelope fa-2x"></i></p>
-			    <p><strong>E-mail:</strong><br>info@kiwigrown.co.nz</p>
-		    </li>
-		</ul>
+		<p>Kiwi Grown 2015 <i class="fa fa-copyright"></i></i></p>
 	</div>
 </footer>
 

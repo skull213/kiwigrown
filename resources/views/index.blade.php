@@ -45,6 +45,8 @@
 					</span></p>
 					<p><span>Whether its screen printing, embrodery or applique you want to add, our product is perfect for you.Expand your existing clothing range by adding some plain or printet Kiwi Grown options or design a wholw new range around our quality garments. Either way, it's a no brainer for you.</span>
 					</p>
+					<p><span><strong>Navigate to our shop to find some KiwiGrown pre made designs and and blank clothing for your own special rebranding and design.</strong></span>
+					</p>
 				</div>
 			</div>		
 		</section>

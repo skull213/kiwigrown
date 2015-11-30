@@ -4,9 +4,8 @@
 @section('content')	
 
 	<section class="section1">
-			<div class="contact-heading">
-			</div>
-			<div class="sub-nav"></div>
+			<div class="contact-heading"></div>
+			<div style=" background-color:#EFEFEF;" class="sub-nav"></div>
 		</section>
 			
 		<div class="about-us">
@@ -20,10 +19,14 @@
 				<div class="text">
 					<h2 class="heading">About Us</h2>
 					<p>
-					<span>Ipsum itaque optio, deserunt perferendis. Sed sunt hic obcaecati quos fugit rem quas architecto, voluptas repudiandae cum dolor totam itaque cupiditate tenetur, omnis! Qui consequuntur libero tenetur labore explicabo enim.</span></p>
-					<p><span>Quis laborum officiis atque asperiores sint aliquid non, assumenda iste veniam alias consectetur repudiandae, explicabo debitis. Ex, dicta, natus. Sint quam unde quaerat provident id architecto maiore</span>
+					<span>Kiwi Grown is a range of affordable, high quality, NZ made garments (blaks) for creative people like you to rebrand and personalize by adding your own design elements. Some customization is also possible.
+					</span></p>
+					<p><span>Whether its screen printing, embrodery or applique you want to add, our product is perfect for you.Expand your existing clothing range by adding some plain or printet Kiwi Grown options or design a wholw new range around our quality garments. Either way, it's a no brainer for you.</span>
+					</p>
+					<p><span><strong>Navigate to our shop to find some KiwiGrown pre made designs and and blank clothing for your own special rebranding and design.</strong></span>
 					</p>
 				</div>
 			</div>	
 		</div>
+		<div style="height:15em;background-color:#F5F5F5;"></div>
 @endsection	
